@@ -46,15 +46,15 @@ export function Markdown({ content }: { content: string }) {
   };
 
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
+    const line = (lines[i] ?? "").trim();
 
     // Tables
     if (isTableRow(line) && !isDivider(line)) {
       const rows: string[][] = [];
       let hasHeader = false;
       let j = i;
-      while (j < lines.length && isTableRow(lines[j].trim())) {
-        const l = lines[j].trim();
+      while (j < lines.length && isTableRow((lines[j] ?? "").trim())) {
+        const l = (lines[j] ?? "").trim();
         if (isDivider(l)) {
           hasHeader = rows.length === 1;
         } else {
@@ -63,7 +63,7 @@ export function Markdown({ content }: { content: string }) {
         j++;
       }
       flushList();
-      const head = hasHeader ? rows[0] : null;
+      const head = hasHeader ? (rows[0] ?? null) : null;
       const bodyRows = hasHeader ? rows.slice(1) : rows;
       blocks.push(
         <div key={key++} className="-mx-1 overflow-x-auto">
