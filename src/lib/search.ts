@@ -16,7 +16,9 @@ const fuse = new Fuse(notes, {
 export function searchNotes(query: string): Note[] {
   const q = query.trim();
   if (q.length < 2) return [];
-  return fuse.search(q).map((r) => r.item);
+  return fuse
+    .search(q, { limit: 60 })
+    .map((r) => r.item);
 }
 
 export function excerpt(body: string, query: string, length = 140): string {

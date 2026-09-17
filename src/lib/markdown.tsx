@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 // Minimal Persian-friendly markdown renderer for note bodies:
-// supports ## / ### headings, - lists, **bold**, and paragraphs.
+// supports ## / ### headings, - and 1. lists, **bold**, tables, and paragraphs.
 function renderInline(text: string): ReactNode[] {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((part, i) =>
@@ -14,6 +14,14 @@ function renderInline(text: string): ReactNode[] {
     ),
   );
 }
+
+const isTableRow = (l: string) => l.startsWith("|") && l.endsWith("|") && l.length > 2;
+const isDivider = (l: string) => /^\|[\s:|-]+\|$/.test(l);
+const cells = (l: string) =>
+  l
+    .slice(1, -1)
+    .split("|")
+    .map((c) => c.trim());
 
 export function Markdown({ content }: { content: string }) {
   const lines = content.split("\n");
@@ -37,15 +45,81 @@ export function Markdown({ content }: { content: string }) {
     }
   };
 
-  for (const raw of lines) {
-    const line = raw.trim();
-    if (line.startsWith("- ")) {
-      list.push(line.slice(2));
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    // Tables
+    if (isTableRow(line) && !isDivider(line)) {
+      const rows: string[][] = [];
+      let hasHeader = false;
+      let j = i;
+      while (j < lines.length && isTableRow(lines[j].trim())) {
+        const l = lines[j].trim();
+        if (isDivider(l)) {
+          hasHeader = rows.length === 1;
+        } else {
+          rows.push(cells(l));
+        }
+        j++;
+      }
+      flushList();
+      const head = hasHeader ? rows[0] : null;
+      const bodyRows = hasHeader ? rows.slice(1) : rows;
+      blocks.push(
+        <div key={key++} className="-mx-1 overflow-x-auto">
+          <table className="w-full min-w-full border-collapse text-[13px]">
+            {head && (
+              <thead>
+                <tr>
+                  {head.map((c, ci) => (
+                    <th
+                      key={ci}
+                      className="border border-border bg-secondary px-2.5 py-2 text-right font-bold text-foreground"
+                    >
+                      {renderInline(c)}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+            )}
+            <tbody>
+              {bodyRows.map((r, ri) => (
+                <tr key={ri}>
+                  {r.map((c, ci) => (
+                    <td
+                      key={ci}
+                      className="border border-border px-2.5 py-2 align-top leading-relaxed text-muted-foreground"
+                    >
+                      {renderInline(c)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      );
+      i = j - 1;
+      continue;
+    }
+
+    if (/^[-*]\s+/.test(line)) {
+      list.push(line.replace(/^[-*]\s+/, ""));
+      continue;
+    }
+    if (/^\d+[.)]\s+/.test(line)) {
+      list.push(line.replace(/^\d+[.)]\s+/, ""));
       continue;
     }
     flushList();
-    if (!line) continue;
-    if (line.startsWith("### ")) {
+    if (!line || line === "-" || /^-{3,}$/.test(line)) continue;
+    if (line.startsWith("#### ")) {
+      blocks.push(
+        <h4 key={key++} className="pt-1 text-sm font-bold text-foreground">
+          {renderInline(line.slice(5))}
+        </h4>,
+      );
+    } else if (line.startsWith("### ")) {
       blocks.push(
         <h3 key={key++} className="pt-2 text-base font-bold text-foreground">
           {renderInline(line.slice(4))}
