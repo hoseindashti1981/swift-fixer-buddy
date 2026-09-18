@@ -122,7 +122,7 @@ function Index() {
           >
             همه
           </button>
-          {categories.map((c) => (
+          {allCategories.map((c) => (
             <button
               key={c}
               onClick={() => setActiveCategory(activeCategory === c ? null : c)}
