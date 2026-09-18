@@ -1,7 +1,7 @@
 import Fuse from "fuse.js";
 import { notes, type Note } from "@/data/notes";
 
-const fuse = new Fuse(notes, {
+const options = {
   keys: [
     { name: "title", weight: 3 },
     { name: "tags", weight: 2.5 },
@@ -11,14 +11,19 @@ const fuse = new Fuse(notes, {
   threshold: 0.35,
   ignoreLocation: true,
   minMatchCharLength: 2,
-});
+};
 
-export function searchNotes(query: string): Note[] {
+const fuse = new Fuse(notes, options);
+
+export function searchNotes(query: string, extra: Note[] = []): Note[] {
   const q = query.trim();
   if (q.length < 2) return [];
-  return fuse
-    .search(q, { limit: 60 })
+  const base = fuse.search(q, { limit: 60 }).map((r) => r.item);
+  if (!extra.length) return base;
+  const extraHits = new Fuse(extra, options)
+    .search(q, { limit: 20 })
     .map((r) => r.item);
+  return [...extraHits, ...base];
 }
 
 export function excerpt(body: string, query: string, length = 140): string {
