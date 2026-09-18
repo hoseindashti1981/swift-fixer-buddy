@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiAiAskRouteImport } from './routes/api/ai-ask'
 import { Route as NoteIdRouteImport } from './routes/note.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiAiAskRoute = ApiAiAskRouteImport.update({
+  id: '/api/ai-ask',
+  path: '/api/ai-ask',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NoteIdRoute = NoteIdRouteImport.update({
@@ -25,27 +31,31 @@ const NoteIdRoute = NoteIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/note/$id'
+  fullPaths: '/' | '/api/ai-ask' | '/note/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/note/$id'
-  id: '__root__' | '/' | '/note/$id'
+  to: '/' | '/api/ai-ask' | '/note/$id'
+  id: '__root__' | '/' | '/api/ai-ask' | '/note/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ApiAiAskRoute: typeof ApiAiAskRoute
   NoteIdRoute: typeof NoteIdRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/ai-ask': {
+      id: '/api/ai-ask'
+      path: '/api/ai-ask'
+      fullPath: '/api/ai-ask'
+      preLoaderRoute: typeof ApiAiAskRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/note/$id': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ApiAiAskRoute: ApiAiAskRoute,
   NoteIdRoute: NoteIdRoute,
 }
 export const routeTree = rootRouteImport
