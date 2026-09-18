@@ -180,6 +180,8 @@ function Index() {
             </p>
           </div>
         )}
+
+        {isSearching && <AskAi key={query.trim()} question={query.trim()} />}
       </main>
     </div>
   );
