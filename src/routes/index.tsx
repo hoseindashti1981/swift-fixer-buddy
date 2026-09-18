@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { categories, notes } from "@/data/notes";
 import { excerpt, highlightParts, searchNotes } from "@/lib/search";
+import { useSavedNotes, AI_CATEGORY } from "@/lib/saved-notes";
+import { AskAi } from "@/components/AskAi";
 
 export const Route = createFileRoute("/")({
   head: () => ({
