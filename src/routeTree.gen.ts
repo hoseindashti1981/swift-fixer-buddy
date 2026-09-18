@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AiRouteImport } from './routes/ai'
 import { Route as ApiAiAskRouteImport } from './routes/api/ai-ask'
 import { Route as NoteIdRouteImport } from './routes/note.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiRoute = AiRouteImport.update({
+  id: '/ai',
+  path: '/ai',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiAiAskRoute = ApiAiAskRouteImport.update({
@@ -31,30 +37,34 @@ const NoteIdRoute = NoteIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ai': typeof AiRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ai': typeof AiRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ai': typeof AiRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/ai-ask' | '/note/$id'
+  fullPaths: '/' | '/ai' | '/api/ai-ask' | '/note/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/ai-ask' | '/note/$id'
-  id: '__root__' | '/' | '/api/ai-ask' | '/note/$id'
+  to: '/' | '/ai' | '/api/ai-ask' | '/note/$id'
+  id: '__root__' | '/' | '/ai' | '/api/ai-ask' | '/note/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AiRoute: typeof AiRoute
   ApiAiAskRoute: typeof ApiAiAskRoute
   NoteIdRoute: typeof NoteIdRoute
 }
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai': {
+      id: '/ai'
+      path: '/ai'
+      fullPath: '/ai'
+      preLoaderRoute: typeof AiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/ai-ask': {
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AiRoute: AiRoute,
   ApiAiAskRoute: ApiAiAskRoute,
   NoteIdRoute: NoteIdRoute,
 }
