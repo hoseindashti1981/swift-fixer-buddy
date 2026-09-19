@@ -183,10 +183,14 @@ function Index() {
                   </span>
                 </div>
                 <h2 className="text-[15px] font-bold leading-snug text-card-foreground">
-                  {isSearching ? <Highlighted text={note.title} query={query} /> : note.title}
+                  {isSearching ? (
+                    <Highlighted text={note.title} query={deferredQuery} />
+                  ) : (
+                    note.title
+                  )}
                 </h2>
                 <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-muted-foreground">
-                  {excerpt(note.body, query)}
+                  {excerpt(note.body, deferredQuery)}
                 </p>
               </Link>
             </li>
@@ -202,7 +206,9 @@ function Index() {
           </div>
         )}
 
-        {isSearching && <AskAi key={query.trim()} question={query.trim()} />}
+        {isSearching && (
+          <AskAi key={deferredQuery.trim()} question={deferredQuery.trim()} />
+        )}
       </main>
     </div>
   );
