@@ -81,6 +81,23 @@ function Index() {
         </div>
       </header>
 
+      {savedNotes.length > 0 && (
+        <Link
+          to="/ai"
+          className="mt-4 flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/10 p-4"
+        >
+          <div>
+            <p className="text-[15px] font-bold text-foreground">پوشه پاسخ‌های هوش مصنوعی</p>
+            <p className="mt-0.5 text-[12px] text-muted-foreground">
+              {savedNotes.length} پاسخ ذخیره‌شده — مشاهده، کپی همه یا حذف
+            </p>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-5 w-5 text-primary">
+            <path d="m15 6-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
+      )}
+
       {/* Search */}
       <div className="sticky top-0 z-10 -mx-4 bg-background/95 px-4 pb-3 pt-4 backdrop-blur">
         <div className="relative">
@@ -147,8 +164,8 @@ function Index() {
         {isSearching && (
           <p className="mb-3 text-sm text-muted-foreground">
             {visible.length
-              ? `${visible.length} نتیجه برای «${query.trim()}»`
-              : `نتیجه‌ای برای «${query.trim()}» پیدا نشد`}
+              ? `${visible.length} نتیجه برای «${deferredQuery.trim()}»`
+              : `نتیجه‌ای برای «${deferredQuery.trim()}» پیدا نشد`}
           </p>
         )}
 
