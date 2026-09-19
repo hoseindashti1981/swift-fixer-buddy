@@ -44,11 +44,15 @@ function Highlighted({ text, query }: { text: string; query: string }) {
 
 function Index() {
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const savedNotes = useSavedNotes();
 
-  const results = useMemo(() => searchNotes(query, savedNotes), [query, savedNotes]);
-  const isSearching = query.trim().length >= 2;
+  const results = useMemo(
+    () => searchNotes(deferredQuery, savedNotes),
+    [deferredQuery, savedNotes],
+  );
+  const isSearching = deferredQuery.trim().length >= 2;
 
   const allCategories = useMemo(
     () => (savedNotes.length ? [AI_CATEGORY, ...categories] : categories),
@@ -56,9 +60,9 @@ function Index() {
   );
 
   const visible = useMemo(() => {
-    const base = isSearching ? results : [...savedNotes, ...notes];
+    const base = isSearching ? results : notes;
     return activeCategory ? base.filter((n) => n.category === activeCategory) : base;
-  }, [isSearching, results, savedNotes, activeCategory]);
+  }, [isSearching, results, activeCategory]);
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
