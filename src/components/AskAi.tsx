@@ -20,6 +20,7 @@ export function AskAi({ question }: { question: string }) {
   const [savedId, setSavedId] = useState<string | null>(null);
 
   const ask = async () => {
+    (document.activeElement as HTMLElement | null)?.blur?.();
     setLoading(true);
     setError(null);
     setAnswer("");
