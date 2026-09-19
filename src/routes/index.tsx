@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import { categories, notes } from "@/data/notes";
 import { excerpt, highlightParts, searchNotes } from "@/lib/search";
 import { useSavedNotes, AI_CATEGORY } from "@/lib/saved-notes";
@@ -44,11 +44,15 @@ function Highlighted({ text, query }: { text: string; query: string }) {
 
 function Index() {
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const savedNotes = useSavedNotes();
 
-  const results = useMemo(() => searchNotes(query, savedNotes), [query, savedNotes]);
-  const isSearching = query.trim().length >= 2;
+  const results = useMemo(
+    () => searchNotes(deferredQuery, savedNotes),
+    [deferredQuery, savedNotes],
+  );
+  const isSearching = deferredQuery.trim().length >= 2;
 
   const allCategories = useMemo(
     () => (savedNotes.length ? [AI_CATEGORY, ...categories] : categories),
@@ -56,9 +60,9 @@ function Index() {
   );
 
   const visible = useMemo(() => {
-    const base = isSearching ? results : [...savedNotes, ...notes];
+    const base = isSearching ? results : notes;
     return activeCategory ? base.filter((n) => n.category === activeCategory) : base;
-  }, [isSearching, results, savedNotes, activeCategory]);
+  }, [isSearching, results, activeCategory]);
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
@@ -76,6 +80,23 @@ function Index() {
           <p className="text-xs text-muted-foreground">عیب‌یابی سریع، کد خطا و راه‌حل</p>
         </div>
       </header>
+
+      {savedNotes.length > 0 && (
+        <Link
+          to="/ai"
+          className="mt-4 flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/10 p-4"
+        >
+          <div>
+            <p className="text-[15px] font-bold text-foreground">پوشه پاسخ‌های هوش مصنوعی</p>
+            <p className="mt-0.5 text-[12px] text-muted-foreground">
+              {savedNotes.length} پاسخ ذخیره‌شده — مشاهده، کپی همه یا حذف
+            </p>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-5 w-5 text-primary">
+            <path d="m15 6-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
+      )}
 
       {/* Search */}
       <div className="sticky top-0 z-10 -mx-4 bg-background/95 px-4 pb-3 pt-4 backdrop-blur">
@@ -143,8 +164,8 @@ function Index() {
         {isSearching && (
           <p className="mb-3 text-sm text-muted-foreground">
             {visible.length
-              ? `${visible.length} نتیجه برای «${query.trim()}»`
-              : `نتیجه‌ای برای «${query.trim()}» پیدا نشد`}
+              ? `${visible.length} نتیجه برای «${deferredQuery.trim()}»`
+              : `نتیجه‌ای برای «${deferredQuery.trim()}» پیدا نشد`}
           </p>
         )}
 
@@ -162,10 +183,14 @@ function Index() {
                   </span>
                 </div>
                 <h2 className="text-[15px] font-bold leading-snug text-card-foreground">
-                  {isSearching ? <Highlighted text={note.title} query={query} /> : note.title}
+                  {isSearching ? (
+                    <Highlighted text={note.title} query={deferredQuery} />
+                  ) : (
+                    note.title
+                  )}
                 </h2>
                 <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-muted-foreground">
-                  {excerpt(note.body, query)}
+                  {excerpt(note.body, deferredQuery)}
                 </p>
               </Link>
             </li>
@@ -181,7 +206,9 @@ function Index() {
           </div>
         )}
 
-        {isSearching && <AskAi key={query.trim()} question={query.trim()} />}
+        {isSearching && (
+          <AskAi key={deferredQuery.trim()} question={deferredQuery.trim()} />
+        )}
       </main>
     </div>
   );
