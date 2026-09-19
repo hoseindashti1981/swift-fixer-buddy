@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useDeferredValue, useMemo, useState } from "react";
-import { categories, notes } from "@/data/notes";
+import { memo, useEffect, useMemo, useState } from "react";
+import { categories, notes, type Note } from "@/data/notes";
 import { excerpt, highlightParts, searchNotes } from "@/lib/search";
 import { useSavedNotes, AI_CATEGORY } from "@/lib/saved-notes";
 import { AskAi } from "@/components/AskAi";
@@ -26,6 +26,16 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+/** مقدار با تأخیر کوتاه به‌روز می‌شود تا جستجوی سنگین پشت تایپ کاربر انجام شود */
+function useDebounced<T>(value: T, delay = 250): T {
+  const [v, setV] = useState(value);
+  useEffect(() => {
+    const t = setTimeout(() => setV(value), delay);
+    return () => clearTimeout(t);
+  }, [value, delay]);
+  return v;
+}
+
 function Highlighted({ text, query }: { text: string; query: string }) {
   return (
     <>
@@ -42,17 +52,56 @@ function Highlighted({ text, query }: { text: string; query: string }) {
   );
 }
 
+/** کارت هر نتیجه — memo شده تا با هر حرف تایپ دوباره ساخته نشود */
+const NoteCard = memo(function NoteCard({
+  note,
+  query,
+  highlight,
+}: {
+  note: Note;
+  query: string;
+  highlight: boolean;
+}) {
+  // excerpt فقط وقتی ورودی‌ها عوض شوند دوباره محاسبه می‌شود
+  const preview = useMemo(
+    () => (highlight ? excerpt(note.body, query) : excerpt(note.body, "")),
+    [note.body, query, highlight],
+  );
+  return (
+    <Link
+      to="/note/$id"
+      params={{ id: note.id }}
+      className="block rounded-2xl border border-border bg-card p-4 shadow-sm transition-colors active:bg-accent"
+    >
+      <div className="mb-1.5 flex items-center justify-between gap-2">
+        <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[11px] font-medium text-primary">
+          {note.category}
+        </span>
+      </div>
+      <h2 className="text-[15px] font-bold leading-snug text-card-foreground">
+        {highlight ? <Highlighted text={note.title} query={query} /> : note.title}
+      </h2>
+      <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-muted-foreground">
+        {preview}
+      </p>
+    </Link>
+  );
+});
+
+const PAGE_SIZE = 25;
+
 function Index() {
   const [query, setQuery] = useState("");
-  const deferredQuery = useDeferredValue(query);
+  const debouncedQuery = useDebounced(query, 250);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
   const savedNotes = useSavedNotes();
 
   const results = useMemo(
-    () => searchNotes(deferredQuery, savedNotes),
-    [deferredQuery, savedNotes],
+    () => searchNotes(debouncedQuery, savedNotes),
+    [debouncedQuery, savedNotes],
   );
-  const isSearching = deferredQuery.trim().length >= 2;
+  const isSearching = debouncedQuery.trim().length >= 2;
 
   const allCategories = useMemo(
     () => (savedNotes.length ? [AI_CATEGORY, ...categories] : categories),
@@ -61,8 +110,14 @@ function Index() {
 
   const visible = useMemo(() => {
     const base = isSearching ? results : notes;
-    return activeCategory ? base.filter((n) => n.category === activeCategory) : base;
-  }, [isSearching, results, activeCategory]);
+    const filtered = activeCategory ? base.filter((n) => n.category === activeCategory) : base;
+    // در حالت جستجو ابتدا فقط بخش اول نتایج رندر می‌شود (سرعت بیشتر روی گوشی)
+    return isSearching && !expanded ? filtered.slice(0, PAGE_SIZE) : filtered;
+  }, [isSearching, results, activeCategory, expanded]);
+
+  const hiddenCount = isSearching
+    ? Math.max(0, (activeCategory ? results.filter((n) => n.category === activeCategory).length : results.length) - visible.length)
+    : 0;
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
@@ -178,38 +233,31 @@ function Index() {
         {isSearching && (
           <p className="mb-3 text-sm text-muted-foreground">
             {visible.length
-              ? `${visible.length} نتیجه برای «${deferredQuery.trim()}»`
-              : `نتیجه‌ای برای «${deferredQuery.trim()}» پیدا نشد`}
+              ? `${visible.length} نتیجه برای «${debouncedQuery.trim()}»`
+              : `نتیجه‌ای برای «${debouncedQuery.trim()}» پیدا نشد`}
           </p>
         )}
 
         <ul className="space-y-3">
           {visible.map((note) => (
             <li key={note.id}>
-              <Link
-                to="/note/$id"
-                params={{ id: note.id }}
-                className="block rounded-2xl border border-border bg-card p-4 shadow-sm transition-colors active:bg-accent"
-              >
-                <div className="mb-1.5 flex items-center justify-between gap-2">
-                  <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[11px] font-medium text-primary">
-                    {note.category}
-                  </span>
-                </div>
-                <h2 className="text-[15px] font-bold leading-snug text-card-foreground">
-                  {isSearching ? (
-                    <Highlighted text={note.title} query={deferredQuery} />
-                  ) : (
-                    note.title
-                  )}
-                </h2>
-                <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-muted-foreground">
-                  {excerpt(note.body, deferredQuery)}
-                </p>
-              </Link>
+              <NoteCard
+                note={note}
+                query={debouncedQuery}
+                highlight={isSearching}
+              />
             </li>
           ))}
         </ul>
+
+        {hiddenCount > 0 && (
+          <button
+            onClick={() => setExpanded(true)}
+            className="mt-4 w-full rounded-2xl border border-border bg-card p-3 text-sm font-medium text-primary"
+          >
+            نمایش {hiddenCount} نتیجه دیگر
+          </button>
+        )}
 
         {!visible.length && isSearching && (
           <div className="mt-10 text-center text-muted-foreground">
@@ -221,7 +269,7 @@ function Index() {
         )}
 
         {isSearching && (
-          <AskAi key={deferredQuery.trim()} question={deferredQuery.trim()} />
+          <AskAi key={debouncedQuery.trim()} question={debouncedQuery.trim()} />
         )}
       </main>
     </div>
