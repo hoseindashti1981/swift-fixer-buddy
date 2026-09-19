@@ -167,7 +167,14 @@ function Index() {
       </div>
 
       {/* Results */}
-      <main className="mt-4">
+      <main
+        className="mt-4"
+        onTouchStart={() => {
+          // لمس هرجای لیست نتایج: کیبورد بسته شود تا دکمه‌های پایین (مثل هوش مصنوعی) در دسترس باشند
+          const el = document.activeElement;
+          if (el instanceof HTMLElement && el.tagName === "INPUT") el.blur();
+        }}
+      >
         {isSearching && (
           <p className="mb-3 text-sm text-muted-foreground">
             {visible.length
