@@ -117,6 +117,13 @@ function Index() {
             enterKeyHint="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => {
+              // دکمه «جستجو» روی کیبورد آیفون: کیبورد بسته می‌شود
+              if (e.key === "Enter") {
+                e.preventDefault();
+                (e.target as HTMLInputElement).blur();
+              }
+            }}
             placeholder="مدل دستگاه، کد خطا یا ایراد… مثل E01"
             className="h-14 w-full rounded-2xl border border-input bg-card pr-12 pl-12 text-base text-foreground shadow-sm outline-none placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-ring/30"
           />
