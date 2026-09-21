@@ -28,6 +28,7 @@ export default defineConfig({
           navigateFallback: "/",
           navigateFallbackDenylist: [/^\/~oauth/, /^\/api\//],
           cleanupOutdatedCaches: true,
+          importScripts: ["/notification-sw.js"],
           runtimeCaching: [
             {
               urlPattern: ({ request }) => request.mode === "navigate",

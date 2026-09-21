@@ -4,6 +4,7 @@ import { notes, type Note } from "@/data/notes";
 import { Markdown } from "@/lib/markdown";
 import { searchNotes } from "@/lib/search";
 import { addSavedNote } from "@/lib/saved-notes";
+import { notify, useNotifyStatus } from "@/lib/notifications";
 
 function buildContext(question: string): string {
   const related: Note[] = searchNotes(question).slice(0, 4);
@@ -18,6 +19,7 @@ export function AskAi({ question }: { question: string }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [savedId, setSavedId] = useState<string | null>(null);
+  const { status: notifyStatus, enable: enableNotify } = useNotifyStatus();
 
   const ask = async () => {
     (document.activeElement as HTMLElement | null)?.blur?.();
@@ -44,7 +46,11 @@ export function AskAi({ question }: { question: string }) {
         text += decoder.decode(value, { stream: true });
         setAnswer(text);
       }
-      if (!text.trim()) setError("پاسخی دریافت نشد، دوباره تلاش کنید.");
+      if (!text.trim()) {
+        setError("پاسخی دریافت نشد، دوباره تلاش کنید.");
+      } else {
+        void notify("جواب هوش مصنوعی آماده شد", question, "/");
+      }
     } catch {
       setError("ارتباط با هوش مصنوعی برقرار نشد. اینترنت را بررسی کنید.");
     } finally {
@@ -73,6 +79,22 @@ export function AskAi({ question }: { question: string }) {
       >
         {loading ? "در حال فکر کردن…" : answer ? "پرسیدن دوباره" : "پرسیدن از هوش مصنوعی"}
       </button>
+
+      {notifyStatus === "default" && (
+        <button
+          onClick={() => void enableNotify()}
+          className="mt-2 h-10 w-full rounded-xl border border-border text-[13px] font-medium text-muted-foreground"
+        >
+          وقتی جواب آماده شد به من اعلان بده
+        </button>
+      )}
+      {notifyStatus === "needs-install" && (
+        <p className="mt-2 text-[12px] text-muted-foreground">
+          برای دریافت اعلان، اپ را با «Add to Home Screen» روی صفحه اصلی نصب کنید.
+        </p>
+      )}
+
+
 
       {error && (
         <p className="mt-3 rounded-xl bg-destructive/10 p-3 text-[13px] text-destructive">{error}</p>
