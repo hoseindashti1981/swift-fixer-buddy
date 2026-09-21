@@ -19,6 +19,7 @@ export function AskAi({ question }: { question: string }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [savedId, setSavedId] = useState<string | null>(null);
+  const { status: notifyStatus, enable: enableNotify } = useNotifyStatus();
 
   const ask = async () => {
     (document.activeElement as HTMLElement | null)?.blur?.();
@@ -45,7 +46,11 @@ export function AskAi({ question }: { question: string }) {
         text += decoder.decode(value, { stream: true });
         setAnswer(text);
       }
-      if (!text.trim()) setError("پاسخی دریافت نشد، دوباره تلاش کنید.");
+      if (!text.trim()) {
+        setError("پاسخی دریافت نشد، دوباره تلاش کنید.");
+      } else {
+        void notify("جواب هوش مصنوعی آماده شد", question, "/");
+      }
     } catch {
       setError("ارتباط با هوش مصنوعی برقرار نشد. اینترنت را بررسی کنید.");
     } finally {
