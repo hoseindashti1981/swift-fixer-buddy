@@ -4,6 +4,7 @@ import { notes, type Note } from "@/data/notes";
 import { Markdown } from "@/lib/markdown";
 import { searchNotes } from "@/lib/search";
 import { addSavedNote } from "@/lib/saved-notes";
+import { notify, useNotifyStatus } from "@/lib/notifications";
 
 function buildContext(question: string): string {
   const related: Note[] = searchNotes(question).slice(0, 4);
