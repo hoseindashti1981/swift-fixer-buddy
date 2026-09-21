@@ -80,6 +80,22 @@ export function AskAi({ question }: { question: string }) {
         {loading ? "در حال فکر کردن…" : answer ? "پرسیدن دوباره" : "پرسیدن از هوش مصنوعی"}
       </button>
 
+      {notifyStatus === "default" && (
+        <button
+          onClick={() => void enableNotify()}
+          className="mt-2 h-10 w-full rounded-xl border border-border text-[13px] font-medium text-muted-foreground"
+        >
+          وقتی جواب آماده شد به من اعلان بده
+        </button>
+      )}
+      {notifyStatus === "needs-install" && (
+        <p className="mt-2 text-[12px] text-muted-foreground">
+          برای دریافت اعلان، اپ را با «Add to Home Screen» روی صفحه اصلی نصب کنید.
+        </p>
+      )}
+
+
+
       {error && (
         <p className="mt-3 rounded-xl bg-destructive/10 p-3 text-[13px] text-destructive">{error}</p>
       )}
