@@ -9,6 +9,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   tanstackStart: {
+    spa: { enabled: true },
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
@@ -16,29 +17,28 @@ export default defineConfig({
   vite: {
     plugins: [
       VitePWA({
+        integration: {
+          configureOptions(config, options) {
+            options.outDir = config.environments["client"]?.build.outDir ?? config.build.outDir;
+          },
+        },
         strategies: "generateSW",
-        registerType: "autoUpdate",
+        registerType: "prompt",
         injectRegister: null,
         filename: "sw.js",
         devOptions: { enabled: false },
         manifest: false,
         workbox: {
-          globPatterns: ["**/*.{js,css,html,png,svg,woff2}"],
+          globPatterns: ["**/*.{js,css,html,png,svg,woff2,webmanifest}"],
+          globIgnores: ["**/_shell.html"],
+          additionalManifestEntries: [{ url: "/_shell.html", revision: new Date().toISOString() }],
           maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
-          navigateFallback: "/",
+          navigateFallback: "/_shell.html",
           navigateFallbackDenylist: [/^\/~oauth/, /^\/api\//],
           cleanupOutdatedCaches: true,
+          clientsClaim: true,
           importScripts: ["/notification-sw.js"],
           runtimeCaching: [
-            {
-              urlPattern: ({ request }) => request.mode === "navigate",
-              handler: "NetworkFirst",
-              options: {
-                cacheName: "pages",
-                networkTimeoutSeconds: 4,
-                expiration: { maxEntries: 60 },
-              },
-            },
             {
               urlPattern: ({ request, sameOrigin }) =>
                 sameOrigin && ["script", "style", "font", "image"].includes(request.destination),

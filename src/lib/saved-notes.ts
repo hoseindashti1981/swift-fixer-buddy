@@ -11,8 +11,19 @@ function read(): Note[] {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
-    const parsed = JSON.parse(raw) as Note[];
-    return Array.isArray(parsed) ? parsed : [];
+    const parsed: unknown = JSON.parse(raw);
+    return Array.isArray(parsed)
+      ? parsed.filter(
+          (n): n is Note =>
+            n &&
+            typeof n.id === "string" &&
+            typeof n.title === "string" &&
+            typeof n.body === "string" &&
+            typeof n.category === "string" &&
+            Array.isArray(n.tags) &&
+            n.tags.every((tag: unknown) => typeof tag === "string"),
+        )
+      : [];
   } catch {
     return [];
   }
@@ -29,7 +40,7 @@ export function getSavedNotes(): Note[] {
 
 export function addSavedNote(input: { title: string; body: string; tags?: string[] }): Note {
   const note: Note = {
-    id: `ai-${Date.now()}`,
+    id: `ai-${crypto.randomUUID()}`,
     title: input.title.trim().slice(0, 120) || "پاسخ هوش مصنوعی",
     category: AI_CATEGORY,
     tags: ["هوش مصنوعی", ...(input.tags ?? [])],

@@ -3,7 +3,6 @@ import { memo, useEffect, useMemo, useState } from "react";
 import { categories, notes, type Note } from "@/data/notes";
 import { excerpt, highlightParts, searchNotes } from "@/lib/search";
 import { useSavedNotes, AI_CATEGORY } from "@/lib/saved-notes";
-import { AskAi } from "@/components/AskAi";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -94,8 +93,10 @@ function Index() {
   const [query, setQuery] = useState("");
   const debouncedQuery = useDebounced(query, 250);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [expanded, setExpanded] = useState(false);
+  const [pageSize, setPageSize] = useState(PAGE_SIZE);
   const savedNotes = useSavedNotes();
+
+  useEffect(() => setPageSize(PAGE_SIZE), [debouncedQuery, activeCategory]);
 
   const results = useMemo(
     () => searchNotes(debouncedQuery, savedNotes),
@@ -108,16 +109,12 @@ function Index() {
     [savedNotes.length],
   );
 
-  const visible = useMemo(() => {
-    const base = isSearching ? results : notes;
-    const filtered = activeCategory ? base.filter((n) => n.category === activeCategory) : base;
-    // در حالت جستجو ابتدا فقط بخش اول نتایج رندر می‌شود (سرعت بیشتر روی گوشی)
-    return isSearching && !expanded ? filtered.slice(0, PAGE_SIZE) : filtered;
-  }, [isSearching, results, activeCategory, expanded]);
-
-  const hiddenCount = isSearching
-    ? Math.max(0, (activeCategory ? results.filter((n) => n.category === activeCategory).length : results.length) - visible.length)
-    : 0;
+  const filtered = useMemo(() => {
+    const base = isSearching ? results : [...savedNotes, ...notes];
+    return activeCategory ? base.filter((n) => n.category === activeCategory) : base;
+  }, [isSearching, results, activeCategory, savedNotes]);
+  const visible = filtered.slice(0, pageSize);
+  const hiddenCount = Math.max(0, filtered.length - visible.length);
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
@@ -136,22 +133,26 @@ function Index() {
         </div>
       </header>
 
-      {savedNotes.length > 0 && (
-        <Link
-          to="/ai"
-          className="mt-4 flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/10 p-4"
+      <Link
+        to="/ai"
+        className="mt-4 flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/10 p-4"
+      >
+        <div>
+          <p className="text-[15px] font-bold text-foreground">دستیار عیب‌یابی</p>
+          <p className="mt-0.5 text-[12px] text-muted-foreground">
+            پرسش از هوش مصنوعی · راهنمای آفلاین · {savedNotes.length} پاسخ ذخیره‌شده
+          </p>
+        </div>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2.5}
+          className="h-5 w-5 text-primary"
         >
-          <div>
-            <p className="text-[15px] font-bold text-foreground">پوشه پاسخ‌های هوش مصنوعی</p>
-            <p className="mt-0.5 text-[12px] text-muted-foreground">
-              {savedNotes.length} پاسخ ذخیره‌شده — مشاهده، کپی همه یا حذف
-            </p>
-          </div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-5 w-5 text-primary">
-            <path d="m15 6-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </Link>
-      )}
+          <path d="m15 6-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </Link>
 
       {/* Search */}
       <div className="sticky top-0 z-10 -mx-4 bg-background/95 px-4 pb-3 pt-4 backdrop-blur">
@@ -168,6 +169,8 @@ function Index() {
           </svg>
           <input
             type="search"
+            aria-label="جستجو در راهنمای پکیج"
+            maxLength={1000}
             inputMode="search"
             enterKeyHint="search"
             value={query}
@@ -197,6 +200,7 @@ function Index() {
         <div className="mt-3 flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <button
             onClick={() => setActiveCategory(null)}
+            aria-pressed={activeCategory === null}
             className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
               activeCategory === null
                 ? "bg-primary text-primary-foreground"
@@ -208,6 +212,7 @@ function Index() {
           {allCategories.map((c) => (
             <button
               key={c}
+              aria-pressed={activeCategory === c}
               onClick={() => setActiveCategory(activeCategory === c ? null : c)}
               className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 activeCategory === c
@@ -231,9 +236,9 @@ function Index() {
         }}
       >
         {isSearching && (
-          <p className="mb-3 text-sm text-muted-foreground">
+          <p role="status" className="mb-3 text-sm text-muted-foreground">
             {visible.length
-              ? `${visible.length} نتیجه برای «${debouncedQuery.trim()}»`
+              ? `${filtered.length} نتیجه برای «${debouncedQuery.trim()}»`
               : `نتیجه‌ای برای «${debouncedQuery.trim()}» پیدا نشد`}
           </p>
         )}
@@ -241,21 +246,17 @@ function Index() {
         <ul className="space-y-3">
           {visible.map((note) => (
             <li key={note.id}>
-              <NoteCard
-                note={note}
-                query={debouncedQuery}
-                highlight={isSearching}
-              />
+              <NoteCard note={note} query={debouncedQuery} highlight={isSearching} />
             </li>
           ))}
         </ul>
 
         {hiddenCount > 0 && (
           <button
-            onClick={() => setExpanded(true)}
+            onClick={() => setPageSize((size) => size + PAGE_SIZE)}
             className="mt-4 w-full rounded-2xl border border-border bg-card p-3 text-sm font-medium text-primary"
           >
-            نمایش {hiddenCount} نتیجه دیگر
+            نمایش {Math.min(PAGE_SIZE, hiddenCount)} نتیجه دیگر
           </button>
         )}
 
@@ -269,7 +270,13 @@ function Index() {
         )}
 
         {isSearching && (
-          <AskAi key={debouncedQuery.trim()} question={debouncedQuery.trim()} />
+          <Link
+            to="/ai"
+            search={{ q: debouncedQuery.trim() }}
+            className="mt-6 block rounded-2xl bg-primary p-4 text-center font-bold text-primary-foreground"
+          >
+            پرسیدن «{debouncedQuery.trim()}» از دستیار
+          </Link>
         )}
       </main>
     </div>

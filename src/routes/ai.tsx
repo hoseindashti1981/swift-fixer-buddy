@@ -2,8 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Markdown } from "@/lib/markdown";
 import { removeSavedNote, useSavedNotes } from "@/lib/saved-notes";
+import { AskAi } from "@/components/AskAi";
 
 export const Route = createFileRoute("/ai")({
+  validateSearch: (search: Record<string, unknown>): { q?: string } =>
+    typeof search["q"] === "string" ? { q: search["q"].slice(0, 1000) } : {},
   head: () => ({
     meta: [
       { title: "پاسخ‌های هوش مصنوعی | راهنمای پکیج" },
@@ -25,10 +28,13 @@ export const Route = createFileRoute("/ai")({
 });
 
 function AiFolder() {
+  const { q } = Route.useSearch();
   const savedNotes = useSavedNotes();
   const [copied, setCopied] = useState(false);
+  const [error, setError] = useState("");
 
   const copyAll = async () => {
+    setError("");
     const text = savedNotes.map((n) => `# ${n.title}\n\n${n.body}`).join("\n\n---\n\n");
     try {
       await navigator.clipboard.writeText(text);
@@ -36,6 +42,7 @@ function AiFolder() {
       setTimeout(() => setCopied(false), 2000);
     } catch {
       setCopied(false);
+      setError("کپی انجام نشد؛ دسترسی کلیپ‌بورد را بررسی کنید.");
     }
   };
 
@@ -46,7 +53,13 @@ function AiFolder() {
           to="/"
           className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground"
         >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="h-4 w-4">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2.5}
+            className="h-4 w-4"
+          >
             <path d="m9 6 6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           بازگشت به جستجو
@@ -54,7 +67,13 @@ function AiFolder() {
       </header>
 
       <div className="pt-6">
-        <h1 className="text-xl font-extrabold text-foreground">پوشه پاسخ‌های هوش مصنوعی</h1>
+        <AskAi key={q ?? ""} question={q ?? ""} />
+        <h2 className="text-xl font-extrabold text-foreground">پوشه پاسخ‌های هوش مصنوعی</h2>
+        {error && (
+          <p role="alert" className="mt-3 text-sm text-destructive">
+            {error}
+          </p>
+        )}
         <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
           {savedNotes.length
             ? `${savedNotes.length} پاسخ ذخیره‌شده — جدا از نوت‌های اصلی شما.`
@@ -84,7 +103,14 @@ function AiFolder() {
                 <Markdown content={note.body.slice(0, 500)} />
               </div>
               <button
-                onClick={() => removeSavedNote(note.id)}
+                onClick={() => {
+                  try {
+                    removeSavedNote(note.id);
+                    setError("");
+                  } catch {
+                    setError("حذف انجام نشد؛ دسترسی حافظه را بررسی کنید.");
+                  }
+                }}
                 className="mt-3 h-10 w-full rounded-xl border border-destructive text-[13px] font-bold text-destructive"
               >
                 حذف

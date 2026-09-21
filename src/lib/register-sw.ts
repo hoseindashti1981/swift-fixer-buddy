@@ -37,7 +37,22 @@ export function registerServiceWorker() {
     return;
   }
 
-  void navigator.serviceWorker.register(SW_URL, { scope: "/" }).catch(() => {
-    /* offline support is optional */
-  });
+  void navigator.serviceWorker
+    .register(SW_URL, { scope: "/", updateViaCache: "none" })
+    .then((registration) => {
+      const announce = () => {
+        if (registration.waiting && registration.active && navigator.serviceWorker.controller)
+          window.dispatchEvent(new CustomEvent("pwa-update", { detail: registration.waiting }));
+      };
+      announce();
+      registration.addEventListener("updatefound", () => {
+        const worker = registration.installing;
+        worker?.addEventListener("statechange", () => {
+          announce();
+          if (worker.state === "redundant" && !registration.active)
+            window.dispatchEvent(new Event("pwa-error"));
+        });
+      });
+    })
+    .catch(() => window.dispatchEvent(new Event("pwa-error")));
 }
