@@ -10,18 +10,31 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AhiClassRouteImport } from './routes/ahi-class'
 import { Route as AiRouteImport } from './routes/ai'
+import { Route as DiagnoseRouteImport } from './routes/diagnose'
 import { Route as ApiAiAskRouteImport } from './routes/api/ai-ask'
 import { Route as NoteIdRouteImport } from './routes/note.$id'
+import { Route as AhiClassReferenceReferenceRouteImport } from './routes/ahi-class_.reference.$reference'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AhiClassRoute = AhiClassRouteImport.update({
+  id: '/ahi-class',
+  path: '/ahi-class',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AiRoute = AiRouteImport.update({
   id: '/ai',
   path: '/ai',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiagnoseRoute = DiagnoseRouteImport.update({
+  id: '/diagnose',
+  path: '/diagnose',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiAiAskRoute = ApiAiAskRouteImport.update({
@@ -34,39 +47,79 @@ const NoteIdRoute = NoteIdRouteImport.update({
   path: '/note/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AhiClassReferenceReferenceRoute =
+  AhiClassReferenceReferenceRouteImport.update({
+    id: '/ahi-class_/reference/$reference',
+    path: '/ahi-class/reference/$reference',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ahi-class': typeof AhiClassRoute
   '/ai': typeof AiRoute
+  '/diagnose': typeof DiagnoseRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
+  '/ahi-class/reference/$reference': typeof AhiClassReferenceReferenceRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ahi-class': typeof AhiClassRoute
   '/ai': typeof AiRoute
+  '/diagnose': typeof DiagnoseRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
+  '/ahi-class/reference/$reference': typeof AhiClassReferenceReferenceRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ahi-class': typeof AhiClassRoute
   '/ai': typeof AiRoute
+  '/diagnose': typeof DiagnoseRoute
   '/api/ai-ask': typeof ApiAiAskRoute
   '/note/$id': typeof NoteIdRoute
+  '/ahi-class_/reference/$reference': typeof AhiClassReferenceReferenceRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/ai' | '/api/ai-ask' | '/note/$id'
+  fullPaths:
+    | '/'
+    | '/ahi-class'
+    | '/ai'
+    | '/diagnose'
+    | '/api/ai-ask'
+    | '/note/$id'
+    | '/ahi-class/reference/$reference'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/ai' | '/api/ai-ask' | '/note/$id'
-  id: '__root__' | '/' | '/ai' | '/api/ai-ask' | '/note/$id'
+  to:
+    | '/'
+    | '/ahi-class'
+    | '/ai'
+    | '/diagnose'
+    | '/api/ai-ask'
+    | '/note/$id'
+    | '/ahi-class/reference/$reference'
+  id:
+    | '__root__'
+    | '/'
+    | '/ahi-class'
+    | '/ai'
+    | '/diagnose'
+    | '/api/ai-ask'
+    | '/note/$id'
+    | '/ahi-class_/reference/$reference'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AhiClassRoute: typeof AhiClassRoute
   AiRoute: typeof AiRoute
+  DiagnoseRoute: typeof DiagnoseRoute
   ApiAiAskRoute: typeof ApiAiAskRoute
   NoteIdRoute: typeof NoteIdRoute
+  AhiClassReferenceReferenceRoute: typeof AhiClassReferenceReferenceRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,11 +131,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ahi-class': {
+      id: '/ahi-class'
+      path: '/ahi-class'
+      fullPath: '/ahi-class'
+      preLoaderRoute: typeof AhiClassRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ai': {
       id: '/ai'
       path: '/ai'
       fullPath: '/ai'
       preLoaderRoute: typeof AiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnose': {
+      id: '/diagnose'
+      path: '/diagnose'
+      fullPath: '/diagnose'
+      preLoaderRoute: typeof DiagnoseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/ai-ask': {
@@ -99,14 +166,24 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoteIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ahi-class_/reference/$reference': {
+      id: '/ahi-class_/reference/$reference'
+      path: '/ahi-class/reference/$reference'
+      fullPath: '/ahi-class/reference/$reference'
+      preLoaderRoute: typeof AhiClassReferenceReferenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AhiClassRoute: AhiClassRoute,
   AiRoute: AiRoute,
+  DiagnoseRoute: DiagnoseRoute,
   ApiAiAskRoute: ApiAiAskRoute,
   NoteIdRoute: NoteIdRoute,
+  AhiClassReferenceReferenceRoute: AhiClassReferenceReferenceRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

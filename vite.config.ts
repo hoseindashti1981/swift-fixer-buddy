@@ -44,6 +44,7 @@ export default defineLovableConfig({
           globIgnores: ["**/_shell.html"],
 
           additionalManifestEntries: [
+            { url: "/offline-assets.json", revision: new Date().toISOString() },
             {
               url: "/_shell.html",
               revision: new Date().toISOString(),

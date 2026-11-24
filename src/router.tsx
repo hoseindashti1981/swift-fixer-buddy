@@ -9,6 +9,7 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
+    getScrollRestorationKey: (location) => location.pathname + location.searchStr,
     defaultPreloadStaleTime: 0,
   });
 

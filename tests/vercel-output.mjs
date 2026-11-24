@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -15,6 +15,14 @@ assert.equal(runtime.supportsResponseStreaming, true);
 assert(existsSync(resolve(output, "static/_shell.html")), "Missing offline SPA shell");
 const worker = readFileSync(resolve(output, "static/sw.js"), "utf8");
 assert(worker.includes("/_shell.html"), "Missing precached shell");
+const assets = resolve(output, "static/assets");
+const clientCode = readdirSync(assets)
+  .filter((name) => name.endsWith(".js"))
+  .map((name) => readFileSync(resolve(assets, name), "utf8"))
+  .join("\n");
+for (const fragment of ["ولتاژ کاری بوبین اصلی", "از طرف لوله بدم یا بمک"]) {
+  assert(!clientCode.includes(fragment), "Quarantined source text leaked into the client bundle");
+}
 for (const [, url] of worker.matchAll(/\{url:"([^"]+)"/g)) {
   assert(
     existsSync(resolve(output, "static", url.replace(/^\//, ""))),
@@ -37,6 +45,22 @@ const api = await app.fetch(
 );
 assert.equal(api.status, 400, "API must reach server validation, not a static fallback");
 await api.text();
+for (const id of ["151-شیر-کنترلر-گاز", "1-E01"]) {
+  const response = await app.fetch(
+    new Request(`http://localhost/note/${encodeURIComponent(id)}`),
+    {},
+  );
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert(html.includes("این مطلب برای بازبینی متوقف شده است"), "Missing quarantine notice");
+  assert(!html.includes("ولتاژ کاری بوبین اصلی"), "Withdrawn gas-valve body leaked into SSR");
+  assert(!html.includes("قطعات مشکوک (اولویت)"), "Withdrawn generic error body leaked into SSR");
+}
+const sectionResponse = await app.fetch(new Request("http://localhost/note/ns-ir-temperature"), {});
+const sectionHtml = await sectionResponse.text();
+assert.equal(sectionResponse.status, 200);
+assert(sectionHtml.includes('id="answer"'), "Missing section deep-link target");
+assert(sectionHtml.includes("Fluke"), "Missing source details on article page");
 console.log(
-  "Vercel output verified: routing, Node function, SSR, API validation, PWA shell and cached assets.",
+  "Vercel output verified: routing, Node function, SSR quarantine, client archive exclusion, API validation, PWA shell and cached assets.",
 );

@@ -1,4 +1,5 @@
 import type { Note } from "../data/notes";
+import { isNoteAvailable } from "../data/content-policy";
 import { excerpt, normalizeSearch, queryTokens, searchNotes } from "./search";
 
 export function relevantPassage(note: Note, question: string, maxLength = 2400): string {
@@ -42,7 +43,9 @@ export function buildContext(question: string): string {
 }
 
 export function offlineAnswer(question: string, saved: Note[]): { text: string; sources: Note[] } {
-  const exact = saved.find((note) => normalizeSearch(note.title) === normalizeSearch(question));
+  const exact = saved.find(
+    (note) => isNoteAvailable(note) && normalizeSearch(note.title) === normalizeSearch(question),
+  );
   if (exact)
     return {
       text: `## پاسخ ذخیره‌شده\nاین پاسخ قبلاً ذخیره شده و دوباره بررسی نشده است.\n\n${exact.body}`,

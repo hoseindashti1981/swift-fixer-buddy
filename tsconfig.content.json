@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["scripts/**/*.ts", "src/data/content-schema.ts"],
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}

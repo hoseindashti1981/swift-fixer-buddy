@@ -1,0 +1,2571 @@
+[
+  {
+    "id": "1-E01",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "2-E02",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "3-E03",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "4-E04",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "5-E05",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "6-E9",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "raw-dataview"
+    ]
+  },
+  {
+    "id": "139-آب-مصرفی-داغ-نمیشه",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "138-افزایش-فشار",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "144-ترتیب-عملکرد-قطعات",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "141-دستگاه-جوش-می-آورد---ترموستات-حد-عمل-کرده",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "142-راهنمای-عیب-یابی-گام-به-گام",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "143-کاهش-فشار",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "140-آب-مصرفی-سرد-و-گرم-می‌شود",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "146-برد",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "162-پرشر-سوئیچ-هوا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "159-پمپ",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "147-ترموستات-حد",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "148-سنسور-دود",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "149-شیر-اطمینان",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "150-شیر-پرکن",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "161-شیر-سه-طرفه-موتوری",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "151-شیر-کنترلر-گاز",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "152-فلورگلاتور",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "153-فلوسوئیچ",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "154-فلومتر",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "160-کلید-حداقل-فشار-آب",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "155-لوله-بای-پس",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "156-مانومتر",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "157-مبدل-حرارتی",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "158-منبع-انبساط",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "145-NTC",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "136-تست-پمپ",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "133-تست-فلوسوئیچ",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "134-تست-مبدل",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "135-تست-منبع-انبساط",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "132-تست-NTC",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "45-برد-آریستون-EGIS",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "46-برد-آریستون-Genus",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "7-برد-آریستون-کلاس-Clas",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "47-برد-آریستون-کلاس-B",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "50-برد-ایران-رادیاتور-E",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "49-برد-ایران-رادیاتور-Echo24FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "48-برد-ایران-رادیاتور-ES",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "51-برد-ایران-رادیاتور-K",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "52-برد-ایران-رادیاتور-L24FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "53-برد-ایران-رادیاتور-L28FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "54-برد-ایران-رادیاتور-L36FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "55-برد-ایران-رادیاتور-LR",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "8-برد-ایران-رادیاتور-M24FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "9-برد-ایران-رادیاتور-M28FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "10-برد-ایساتیس-ایکاروس",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "11-برد-ایساتیس-سیمات",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "12-برد-ایساتیس-نیواستار",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "13-برد-ایساتیس-واگر",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "15-برد-ایمرگاس-Nike",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "14-برد-ایمرگاس-",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "18-برد-بوتان-اپتیما22i",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "19-برد-بوتان-اپتیما24i",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "20-برد-بوتان-اپتیما28i",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "21-برد-بوتان-بنسره‌پرو",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "22-برد-بوتان-بیتا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "26-برد-بوتان-پارما",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "27-برد-بوتان-پاویا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "56-برد-بوتان-پرلا-IDEA",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "28-برد-بوتان-پرلاپرو۲۴",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "29-برد-بوتان-پرلاپرو۲۸",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "30-برد-بوتان-پرلاپرو۳۲",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "23-برد-بوتان-روما",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "31-برد-بوتان-کالداونیزیا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "24-برد-بوتان-نواآکوا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "25-برد-بوتان-ورونا24i",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "16-برد-بوتان-BN324",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "17-برد-بوتان-CV424",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "44-تاچی",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "33-برد-شوفاژکار-الگانت",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "32-برد-شوفاژکار--فلورانس",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "35-برد-شوفاژکار-کاپریس",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "34-برد-شوفاژکار-کامفورت",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "36-برد-فرولی-دیواتک",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "42-برد-گلدیران-پایونیر",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "43-برد-گلدیران-پرستیژ",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "37-برد-لورچ-آدنا",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "38-برد-لورچ-هرما",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "39-برد-لورچ-هیرو",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "58-برد-مرکوری-24FT",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "59-برد-مرکوری-24MD",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "60-برد-مرکوری-ونوس24",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "40-برد-وایلانت-اتموتک‌پلاس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "41-برد-وایلانت-توربوتک‌پلاس",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "57-برد-بوتان-پرلاپرو",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "61-آریستون-bs",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "62-آریستون-clas",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "63-آریستون-egis",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "64-آریستون-genus",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "65-ایران-رادیاتور-K",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "66-ایران-رادیاتور-E",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "67-ایران-رادیاتور-ES",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "69-ایران-رادیاتور-LR",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "70-ایران-رادیاتور-M24FF",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "71-ایران-رادیاتور-M28FF",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "72-ایساتیس-ایکاروس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "73-ایساتیس-سیمات",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "74-ایساتیس-نیواستار",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "75-ایساتیس-واگر",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "76-ایمرگاس-nike",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "77-ایمرگاس-victrix",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "78-بوتان-BN324",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "79-بوتان-CV424",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "83-بوتان-بنسره-پرو",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "85-بوتان-روما",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "86-بوتان-نووا-آکوا",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "95-شوفاژکار-الگانت",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "96-شوفاژکار-فلورانس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "97-شوفاژکار-کامفورت",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "98-شوفاژکار-کاپریس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "99-لورچ-آدنا",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "100-لورچ-هرما",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "101-لورچ-هیرو",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "110-وایلانت-TurboTEC-Plus-(توربوتک-پلاس)",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "111-وایلانت-اتموتک-پلاس-۲۴",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "113-گلدیران-پایونیر",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "114-گلدیران-پرستیژ",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "122-تاچی",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "124-فرولی",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "115-آریستون",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "119-ایران-رادیاتور",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "116-ایران-رادیاتور-ECO24FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "117-ایران-رادیاتور-L24FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "118-ایران-رادیاتور-L28FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "68-ایران-رادیاتور-L36FF",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "120-ایساتیس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "121-ایمرگاس",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "94-بوتان",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "80-بوتان-اپتیما۲۲i",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "81-بوتان-اپتیما۲۴i",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "82-بوتان-اپتیما۲۸i",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "84-بوتان-بیتا",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "88-بوتان-پارما",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "89-بوتان-پاویا",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "90-بوتان-پرلاپرو۲۴",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "91-بوتان-پرلاپرو۲۸",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "92-بوتان-پرلاپرو۳۲",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "93-بوتان-کالداونزیا",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "87-بوتان-ورونا24RSI",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "123-شوفاژکار",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "129-گلدیران",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "125-لورچ",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "126-مرکوری-24FT",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "127-مرکوری-24MD",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "107-مرکوری-مگاترم-۲۸۰۰۰",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "108-مرکوری-مگاترم-۳۲۰۰۰",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "109-مرکوری-مگاترم-۳۶۰۰۰XL",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "106-مرکوری-مگاترم-۲۴۰۰۰",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "128-مرکوری-Venus24",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "102-مرکوری-X4",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "103-مرکوری-X5",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "104-مرکوری-X7",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "105-مرکوری-XH",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "112-وایلانت",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "131-۱۴۰۵-۰۴-۲۰_بوتان_عدم_گرمایش_آب",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "130-تجربیات",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence",
+      "unresolved-references"
+    ]
+  },
+  {
+    "id": "137-روش-ریست-پکیج‌ها",
+    "status": "needs-review",
+    "released": false,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety",
+      "archive-is-not-technical-evidence"
+    ]
+  },
+  {
+    "id": "ns-water-flow",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-diverter",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-heat-command",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-radiator-air",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-kettling",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-normal-noise",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-pipe-expansion",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-water-hammer",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-ir-temperature",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-ignition",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-gas-load",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-gas-commission",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-flue-length",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-flue-integrity",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-flue-slope",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-safety-bypass",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-gas-smell",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-dhw-demand",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-overrun",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-air-proof",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-gas-factory",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-gas-pressure-test",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-system-pressure",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-radiator-bottom",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-radiator-controls",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-dhw-settings",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-condensate-cold",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-co-alert",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-temperature-difference",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-heat-output-evidence",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-pump-operating-point",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-steady-temperature",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-flow-noise",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-humming",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-dhw-mixing",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ns-delayed-ignition",
+    "status": "verified",
+    "released": true,
+    "issues": []
+  },
+  {
+    "id": "ahi-reference-faults",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-reference-parts",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-pressure-drop",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-cold-radiators",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-expansion-vessel",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-methods",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d01",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d02",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d03",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d05",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d06",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d07",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d08",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d09",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d10",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d32",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d11",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d12",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d13",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d14",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d15",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d16",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d18",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d19",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d20",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d21",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d22",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d23",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d47",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d24",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d25",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d26",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d27",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d28",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d29",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d30",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d31",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d33",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d34",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d35",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d36",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d37",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d38",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-d48",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p01",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p02",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p03",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p04",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p05",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p06",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p07",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p08",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p09",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p10",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p12",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p13",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p14",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p15",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p16",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p17",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p18",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p19",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p20",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p21",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p22",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p23",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p24",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p25",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p26",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p27",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p28",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p29",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p30",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p31",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p32",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p33",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p34",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p35",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  },
+  {
+    "id": "ahi-p36",
+    "status": "needs-review",
+    "released": true,
+    "issues": [
+      "unknown-device-scope",
+      "unreviewed-safety"
+    ]
+  }
+]

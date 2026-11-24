@@ -50,6 +50,7 @@ export function AskAi({ question }: { question: string }) {
     const controller = new AbortController();
     abort.current = controller;
     const timeout = setTimeout(() => controller.abort("timeout"), 95_000);
+    let text = "";
     try {
       const res = await fetch("/api/ai-ask", {
         method: "POST",
@@ -63,10 +64,10 @@ export function AskAi({ question }: { question: string }) {
           : "سرویس در دسترس نیست. از راهنمای آفلاین استفاده کنید.";
         throw new Error(message || "خطا در دریافت پاسخ");
       }
-      let text = "";
       let finished = false;
       let lastUpdate = 0;
       for await (const line of readLines(res.body)) {
+        controller.signal.throwIfAborted();
         if (!line.trim()) continue;
         const event = JSON.parse(line);
         if (event.error) throw new Error(String(event.error));
@@ -85,6 +86,7 @@ export function AskAi({ question }: { question: string }) {
       if (!finished || !text.trim()) throw new Error("پاسخ کامل دریافت نشد؛ دوباره تلاش کنید.");
       setComplete(true);
     } catch (cause) {
+      setAnswer(text);
       setError(
         controller.signal.aborted
           ? controller.signal.reason === "timeout"
@@ -155,10 +157,10 @@ export function AskAi({ question }: { question: string }) {
           {loading ? (
             <button
               type="button"
-              onClick={() => abort.current?.abort()}
-              className="rounded-xl border border-border px-4"
+              onClick={() => abort.current?.abort("user")}
+              className="min-h-12 rounded-xl bg-destructive px-5 font-bold text-destructive-foreground"
             >
-              توقف
+              ■ توقف پاسخ
             </button>
           ) : (
             online && (

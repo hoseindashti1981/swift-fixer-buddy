@@ -1,0 +1,128 @@
+{
+  "reviewedAt": "2026-11-18",
+  "before": {
+    "articles": 28,
+    "mapped": 95,
+    "pending": 76
+  },
+  "after": {
+    "articles": 36,
+    "mapped": 110,
+    "pending": 61
+  },
+  "additions": [
+    {
+      "id": "ns-temperature-difference",
+      "title": "اختلاف دمای رفت و برگشت عدد ثابتِ سلامت نیست",
+      "query": "اختلاف رفت برگشت همیشه بیست درجه",
+      "expectedArticleId": "ns-temperature-difference",
+      "questions": [
+        "boiler-pipe-temperature-diagnosis-qa-fa-q8",
+        "boiler-pipe-temperature-diagnosis-qa-fa-q9",
+        "boiler-pipe-temperature-diagnosis-qa-fa-q14"
+      ],
+      "sources": [
+        "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+      ]
+    },
+    {
+      "id": "ns-heat-output-evidence",
+      "title": "داغی لوله، توان کافی آب گرم را ثابت نمی‌کند",
+      "query": "لوله داغه ولی آب ولرمه مبدل سالمه",
+      "expectedArticleId": "ns-heat-output-evidence",
+      "questions": [
+        "boiler-pipe-temperature-diagnosis-qa-fa-q19",
+        "boiler-pipe-temperature-diagnosis-qa-fa-q27"
+      ],
+      "sources": [
+        "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+      ]
+    },
+    {
+      "id": "ns-pump-operating-point",
+      "title": "تعویض پمپ یا افزایش دور، گردش کافی را تضمین نمی‌کند",
+      "query": "پمپ عوض کردم شوفاژ هنوز سرده",
+      "expectedArticleId": "ns-pump-operating-point",
+      "questions": [
+        "boiler-pipe-temperature-diagnosis-qa-fa-q15",
+        "ayebyabi-adam-garmayesh-shofaj-q15"
+      ],
+      "sources": [
+        "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+      ]
+    },
+    {
+      "id": "ns-steady-temperature",
+      "title": "دمای لحظه شروع را با حالت پایدار اشتباه نگیریم",
+      "query": "دمای رفت برگشت اول روشن شدن",
+      "expectedArticleId": "ns-steady-temperature",
+      "questions": [
+        "boiler-pipe-temperature-diagnosis-qa-fa-q6"
+      ],
+      "sources": [
+        "https://www.caleffi.com/en-us/blog/3-site-measurements-circuit-performance"
+      ]
+    },
+    {
+      "id": "ns-flow-noise",
+      "title": "صدای جریان در رادیاتور و لوله؛ دور پمپ تنها عامل نیست",
+      "query": "صدای هیس رادیاتور دور پمپ",
+      "expectedArticleId": "ns-flow-noise",
+      "questions": [
+        "boiler-unusual-noises-qa-fa-q19"
+      ],
+      "sources": [
+        "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_8_NA_Hydronic%20balancing.pdf"
+      ]
+    },
+    {
+      "id": "ns-humming",
+      "title": "وزوز یکنواخت پکیج؛ پمپ و فن را از روی صدا محکوم نکنیم",
+      "query": "پکیج وزوز بلند یکنواخت دارد",
+      "expectedArticleId": "ns-humming",
+      "questions": [
+        "boiler-unusual-noises-qa-fa-q10"
+      ],
+      "sources": [
+        "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/"
+      ]
+    },
+    {
+      "id": "ns-dhw-mixing",
+      "title": "آب یک شیر سرد است؛ اختلاط محلی را هم بررسی کنیم",
+      "query": "فقط آب حمام سرده بقیه شیرها گرم",
+      "expectedArticleId": "ns-dhw-mixing",
+      "questions": [
+        "ayebyabi-adam-garmayesh-ab-masrefi-q9",
+        "boiler-pipe-temperature-diagnosis-qa-fa-q26"
+      ],
+      "sources": [
+        "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+      ]
+    },
+    {
+      "id": "ns-delayed-ignition",
+      "title": "اشتعال دیررس یا صدای غیرعادی هنگام روشن‌شدن",
+      "query": "جرقه چند بار بعد با تقه روشن میشه",
+      "expectedArticleId": "ns-delayed-ignition",
+      "questions": [
+        "boiler-gas-valve-pressure-qa-fa-q5",
+        "boiler-unusual-noises-qa-fa-q2"
+      ],
+      "sources": [
+        "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+      ]
+    }
+  ],
+  "mergedIntoExisting": [
+    "boiler-gas-valve-pressure-qa-fa-q24"
+  ],
+  "recheckedPending": [
+    "f34",
+    "w18",
+    "w4",
+    "w6",
+    "w13",
+    "w19"
+  ]
+}

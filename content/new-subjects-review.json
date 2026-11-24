@@ -1,0 +1,2478 @@
+[
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q1",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 1,
+    "line": 7,
+    "question": "پکیج روشن است، شوفاژها گرم می‌شوند، اما آب مصرفی کاملاً سرد است.",
+    "sha256": "3ccf8d09bfdfaddd81aa93267b300770070fec78e039b08be2e867ed6e33662d",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q2",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 2,
+    "line": 11,
+    "question": "وقتی شیر آب گرم را باز می‌کنم، پکیج اصلاً واکنش نشان نمی‌دهد؛ نه شعله می‌گیرد و نه فن/پمپ فعال می‌شود.",
+    "sha256": "8ec9653df7350852d9f497946597f83bee24b49645bddcf6ac0ec00c3c376863",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-demand",
+    "reason": "فقط پاسخ محدودِ «بازکردن شیر آب و ثبت تقاضای آب گرم» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q3",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 3,
+    "line": 15,
+    "question": "با باز کردن شیر آب گرم، علامت شیر آب روی نمایشگر پکیج می‌آید اما آب گرم نمی‌شود.",
+    "sha256": "d8e9888034204edae9a1232593f3e97ae577fa791aac16cd8aadf9fa469dbb90",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q4",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 4,
+    "line": 19,
+    "question": "آب مصرفی فقط ولرم می‌شود و با گذشت زمان هم داغ نمی‌شود.",
+    "sha256": "a6c469f35880e8f314631e1e0cde20ac04304742721efc2d01a4b4d650d51ef6",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه تک‌مبدل یا دومبدل و اندازه‌گیری انتقال حرارت برای اثبات رسوب مبدل ثانویه. نوبت دوم: جدول ۳۲ Greenstar 4000 نیز بررسی شد؛ برای اثبات رسوب، نوسان یا ترتیب آزمون مدل نامعلوم کافی نبود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/",
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": "نقشه تک‌مبدل یا دومبدل و اندازه‌گیری انتقال حرارت برای اثبات رسوب مبدل ثانویه."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q5",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 5,
+    "line": 23,
+    "question": "آب گرم در دبی کم گرم می‌شود، اما وقتی شیر را کامل باز می‌کنم سرد می‌شود.",
+    "sha256": "2dac3bc6af688348470d3c5f4704b73f1a105e44392ca2ad26524a3b729d1c25",
+    "decision": "rewritten-merged",
+    "articleId": "ns-water-flow",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q6",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 6,
+    "line": 27,
+    "question": "آب مصرفی گرم و سرد می‌شود؛ یک لحظه داغ و بعد سرد است.",
+    "sha256": "aa3b1f9c11aca4c0fd6fa54b8876dc270093e8f39c4e488c2e2b1ee03926df77",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار ثبت هم‌زمان دبی، دمای آب، وضعیت شعله و سیگنال حسگر در زمان نوسان. نوبت دوم: جدول ۳۲ Greenstar 4000 نیز بررسی شد؛ برای اثبات رسوب، نوسان یا ترتیب آزمون مدل نامعلوم کافی نبود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/",
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": "ثبت هم‌زمان دبی، دمای آب، وضعیت شعله و سیگنال حسگر در زمان نوسان."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q7",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 7,
+    "line": 31,
+    "question": "آب گرم فقط وقتی شوفاژها روشن هستند گرم می‌شود.",
+    "sha256": "6fc3a09b01a7c0a1d9bca0af82f07e9c0578179b7993be8e89bc9ec21000bd51",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q8",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 8,
+    "line": 35,
+    "question": "فشار آب سرد ساختمان کم است و آب گرم هم گرم نمی‌شود.",
+    "sha256": "ef4eed4261c4c663a0e22b448f1d1c8aa25c7343875ef59a80f4adf3e9e27a01",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-demand",
+    "reason": "فقط پاسخ محدودِ «بازکردن شیر آب و ثبت تقاضای آب گرم» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q9",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 9,
+    "line": 39,
+    "question": "فقط آب گرم یک شیر سرد است، اما بقیه شیرها گرم می‌شوند.",
+    "sha256": "6147d092628ac7ef6d179b0384795c95f5348c98c7555f798aebf7dd3e732e40",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-mixing",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «آب یک شیر سرد است؛ اختلاط محلی را هم بررسی کنیم» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q10",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 10,
+    "line": 43,
+    "question": "همه شیرهای آب گرم سرد یا ولرم‌اند.",
+    "sha256": "73fadb2eaa2ff36b3af57b995dc23ceb956db894ae6ba5b78c23a27ec7becf02",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار توالی عیب‌یابی سازنده همان مدل برای ترتیب بررسی علت‌های آب ولرم.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/"
+    ],
+    "neededEvidence": "توالی عیب‌یابی سازنده همان مدل برای ترتیب بررسی علت‌های آب ولرم."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q11",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 11,
+    "line": 47,
+    "question": "پکیج شعله می‌گیرد، اما آب مصرفی سرد می‌ماند.",
+    "sha256": "f5c0a74031963b976b1749d7fcc32475b0e5f675c027240876784b7af6ffed09",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار توالی فرمان آب مصرفی و گرمایش همان مدل؛ روشن‌بودن شعله به‌تنهایی کافی نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/"
+    ],
+    "neededEvidence": "توالی فرمان آب مصرفی و گرمایش همان مدل؛ روشن‌بودن شعله به‌تنهایی کافی نیست."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q12",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 12,
+    "line": 51,
+    "question": "رادیاتورها هنگام باز کردن آب گرم هم گرم می‌شوند.",
+    "sha256": "c99c7bb905e74d6af1a7eeb87e9a17068db1e1529f06dd37b3c8387176839494",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q13",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 13,
+    "line": 55,
+    "question": "آب مصرفی بعد از چند دقیقه داغ می‌شود، ولی دوباره سرد می‌شود.",
+    "sha256": "ce624e580dcc9cf27463ad1aad7d9e491351d725a5f7472ca531170a9887bedd",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نمودار دما و دبی هنگام افت و آزمون مبدل برای اثبات رسوب ادعاشده. نوبت دوم: جدول ۳۲ Greenstar 4000 نیز بررسی شد؛ برای اثبات رسوب، نوسان یا ترتیب آزمون مدل نامعلوم کافی نبود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/",
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": "نمودار دما و دبی هنگام افت و آزمون مبدل برای اثبات رسوب ادعاشده."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q14",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 14,
+    "line": 59,
+    "question": "پکیج روی حالت تابستانه است و آب گرم نمی‌دهد.",
+    "sha256": "1101ad5a100d54327c90136667d868719cbb4237e85caae2ddc2f6987aeabddd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-settings",
+    "reason": "فقط پاسخ محدودِ «بررسی حالت کار و دمای تنظیمی آب مصرفی» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q15",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 15,
+    "line": 63,
+    "question": "دمای آب مصرفی روی پکیج پایین تنظیم شده است.",
+    "sha256": "19ee80259a7b71046024e6e7877a42f45a65061958f335c0c62be8dbc1d17b62",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-settings",
+    "reason": "فقط پاسخ محدودِ «بررسی حالت کار و دمای تنظیمی آب مصرفی» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q16",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 16,
+    "line": 67,
+    "question": "فشار آب ورودی کم است، اما فلوسوئیچ سالم به نظر می‌رسد.",
+    "sha256": "c0bb57a21215c897d06547a5638ffd418234f7c746663fff14e0a9dd1ad9520a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-demand",
+    "reason": "فقط پاسخ محدودِ «بازکردن شیر آب و ثبت تقاضای آب گرم» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q17",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 17,
+    "line": 71,
+    "question": "صدای لرزش یا ضربه از داخل پکیج هنگام باز کردن شیر آب گرم می‌آید.",
+    "sha256": "13bc5c10a63fd7f3f40d8034a32387f3a62f18043395ac55d0620b050392a450",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار محل دقیق ارتعاش و آزمون سازنده برای تفکیک قطعه مکانیکی و احتراق.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/"
+    ],
+    "neededEvidence": "محل دقیق ارتعاش و آزمون سازنده برای تفکیک قطعه مکانیکی و احتراق."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q18",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 18,
+    "line": 75,
+    "question": "سنسور NTC آب مصرفی خراب است؛ چه علامتی دارد؟",
+    "sha256": "a0bfdb648c22f8a5495405e455cb849ba7fbb7ee3577adea8d6a854174e3bd01",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار منحنی مقاومت–دما و روش آزمون NTC با شماره قطعه و مدل دستگاه. نوبت دوم: نسخه نمایه‌شده دفترچه رسمی یافت شد، اما دریافت PDF اصلی ناموفق و جدول بدون تأیید بصری بود؛ تفسیر کد یا جدول سنسور از متن مخدوش منتشر نشد.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/",
+      "https://iranradiator.ir/wp-content/themes/sparkling/assets/pdf/139001212-009%20%28L%20%D8%B3%D8%B1%DB%8C%29%281%29.pdf",
+      "https://iranradiator.ir/wp-content/themes/sparkling/assets/pdf/139001744-003%20%28Eco%20%D8%B3%D8%B1%DB%8C%29.pdf"
+    ],
+    "neededEvidence": "منحنی مقاومت–دما و روش آزمون NTC با شماره قطعه و مدل دستگاه."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-ab-masrefi-q19",
+    "file": "ayebyabi-adam-garmayesh-ab-masrefi.md",
+    "number": 19,
+    "line": 79,
+    "question": "بعد از تعویض فلوسوئیچ هم آب گرم نمی‌شود.",
+    "sha256": "a6ac927fb15333b276b7f359208931baa5d78cc618e3c4c6de10ea9a08300a2e",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار اندازه‌گیری سیگنال جریان، سیم‌کشی و منطق برد طبق نقشه همان مدل. نوبت دوم: جدول ۳۲ Greenstar 4000 نیز بررسی شد؛ برای اثبات رسوب، نوسان یا ترتیب آزمون مدل نامعلوم کافی نبود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://www.vaillant.com/en/advice/help-center/hot-water-not-working/",
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": "اندازه‌گیری سیگنال جریان، سیم‌کشی و منطق برد طبق نقشه همان مدل."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q1",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 1,
+    "line": 7,
+    "question": "پکیج روشن است و آب گرم مصرفی هم دارد، اما هیچ‌کدام از رادیاتورها گرم نمی‌شوند.",
+    "sha256": "4da92154650bd85d79b8291553dc60fc2526f5436994f23a756f384c4677f6f7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-heat-command",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q2",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 2,
+    "line": 11,
+    "question": "آب گرم مصرفی کاملاً گرم است، ولی شوفاژها سردند.",
+    "sha256": "ceea6d86819ba927bff42e2eaa960d506aa7210f39ae59c38dd791c31b3fd527",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q3",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 3,
+    "line": 15,
+    "question": "پکیج شعله می‌گیرد، ولی لوله رفت گرمایش سرد می‌ماند.",
+    "sha256": "e51861f66ed5f76e5236bbd9469ffd8f1f3ba1120eaead9f0ccab4ab8b4ed484",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار آزمون گردش و کنترل پمپ همان مدل برای رد علت‌های دیگر لوله رفت سرد.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/heating-tips/home-advice/why-is-my-radiator-not-working/",
+      "https://www.vaillant.com/en/advice/help-center/why-is-my-radiator-cold-at-the-bottom/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/"
+    ],
+    "neededEvidence": "آزمون گردش و کنترل پمپ همان مدل برای رد علت‌های دیگر لوله رفت سرد."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q4",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 4,
+    "line": 19,
+    "question": "فشار پکیج پایین است و رادیاتورها گرم نمی‌شوند.",
+    "sha256": "2e9cc24a562cb82c0075e6983a6829298c6bb71d1d1959410c0b1d536a37b904",
+    "decision": "rewritten-merged",
+    "articleId": "ns-system-pressure",
+    "reason": "فقط پاسخ محدودِ «افت فشار مدار گرمایش و نیاز مکرر به آبگیری» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q5",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 5,
+    "line": 23,
+    "question": "فقط بالای رادیاتورها سرد است و پایین گرم است.",
+    "sha256": "5f5dc7d4889c3b069e51d63deb4ef367ed05e7f0d2f57f5d86d81e1165601001",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-air",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q6",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 6,
+    "line": 27,
+    "question": "پایین رادیاتور سرد است، ولی بالای آن گرم است.",
+    "sha256": "125e4c25ca5af984e097138e8865aed89dee157f38412d40befaa5cf496e43dd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-bottom",
+    "reason": "فقط پاسخ محدودِ «پایین رادیاتور سرد است یا پس از هواگیری گرم نمی‌شود» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.com/en/advice/help-center/why-is-my-radiator-cold-at-the-bottom/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q7",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 7,
+    "line": 31,
+    "question": "بعضی رادیاتورها گرم می‌شوند و بعضی سرد می‌مانند.",
+    "sha256": "4d7be43318bdd9311ed783dacdb5e691f9cda9416efd5aa209afe66b0983abf8",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-controls",
+    "reason": "فقط پاسخ محدودِ «بعضی رادیاتورها سردند؛ کنترل محلی و فرمان گرمایش» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/heating-tips/home-advice/why-is-my-radiator-not-working/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q8",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 8,
+    "line": 35,
+    "question": "رادیاتورها بعد از هواگیری هم سردند.",
+    "sha256": "d55a9c0c32d670be927ed4ff40d40bfce78066fa2db7c730b8f9f31d877e7bae",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-bottom",
+    "reason": "فقط پاسخ محدودِ «پایین رادیاتور سرد است یا پس از هواگیری گرم نمی‌شود» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.com/en/advice/help-center/why-is-my-radiator-cold-at-the-bottom/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q9",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 9,
+    "line": 39,
+    "question": "صدای هوا، غرغرو یا هیس‌هیس از شوفاژها می‌آید.",
+    "sha256": "f75e738ca16b8c2f9da46be8558a5e684292c8adfc9dfd1f1a877812427c8ec1",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-air",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q10",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 10,
+    "line": 43,
+    "question": "پکیج روشن است، شعله دارد، اما رادیاتورها فقط کمی ولرم می‌شوند.",
+    "sha256": "97f8120ef4cf95feb40a477dae06bb211a6911230d6ed297d113853604ed1524",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-controls",
+    "reason": "فقط پاسخ محدودِ «بعضی رادیاتورها سردند؛ کنترل محلی و فرمان گرمایش» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/heating-tips/home-advice/why-is-my-radiator-not-working/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q11",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 11,
+    "line": 47,
+    "question": "پمپ صدا می‌دهد یا کاملاً ساکت است و آب در مدار حرکت نمی‌کند.",
+    "sha256": "1b5b0e488ae8796a486939f07dd63cf7376796c7f5ae02705e00a97073bb4726",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش اندازه‌گیری دبی یا عملکرد پمپ؛ صدا یا سکوت به‌تنهایی شاهد گردش نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/heating-tips/home-advice/why-is-my-radiator-not-working/",
+      "https://www.vaillant.com/en/advice/help-center/why-is-my-radiator-cold-at-the-bottom/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/"
+    ],
+    "neededEvidence": "روش اندازه‌گیری دبی یا عملکرد پمپ؛ صدا یا سکوت به‌تنهایی شاهد گردش نیست."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q12",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 12,
+    "line": 51,
+    "question": "پکیج خطای دمای بالا می‌دهد و رادیاتورها گرم نمی‌شوند.",
+    "sha256": "792c055edd5fe0bbe4e0a630ec9f8ef1bab58d6152b6c1611851d8344124c669",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q13",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 13,
+    "line": 55,
+    "question": "همه رادیاتورها سردند، اما وقتی آب گرم باز می‌کنیم شوفاژها گرم می‌شوند.",
+    "sha256": "8de55acdff18597de473bf2853d684d305f8792f56905a45552ddcaf775b4b35",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q14",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 14,
+    "line": 59,
+    "question": "ترموستات را بالا می‌برم، ولی پکیج وارد حالت گرمایش نمی‌شود.",
+    "sha256": "a4efa059e048936a817f90f618c406335f38fd5c2e5a1b3647a200fe2931e417",
+    "decision": "rewritten-merged",
+    "articleId": "ns-heat-command",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "ayebyabi-adam-garmayesh-shofaj-q15",
+    "file": "ayebyabi-adam-garmayesh-shofaj.md",
+    "number": 15,
+    "line": 63,
+    "question": "بعد از تعویض پمپ هم رادیاتورها گرم نمی‌شوند.",
+    "sha256": "00a6bc0d218115bc57f54bfb638b8f27b866c95d8c3f5ad85eec090608c9b743",
+    "decision": "rewritten-merged",
+    "articleId": "ns-pump-operating-point",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «تعویض پمپ یا افزایش دور، گردش کافی را تضمین نمی‌کند» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q1",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 1,
+    "line": 13,
+    "question": "پکیج فن‌دار و بدون فن چه تفاوتی در دودکش دارند؟",
+    "sha256": "d95e94d535b1aa3534bf0a72968ff877ebaf975c1396ee744e177706c114f8a8",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار سند طبقه‌بندی دستگاه و تفاوت تأمین هوا و تخلیه دود برای مدل مورد نظر.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "سند طبقه‌بندی دستگاه و تفاوت تأمین هوا و تخلیه دود برای مدل مورد نظر."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q2",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 2,
+    "line": 19,
+    "question": "فن‌دار بودن یعنی دستگاه حتماً محفظه‌بسته است؟",
+    "sha256": "f58a1964d729b7f8a0451639b803883fe96be5de447eb8e12924a572650fcb99",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نوع محفظه و طبقه‌بندی احتراق در پلاک و دفترچه؛ صرف وجود فن کافی نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نوع محفظه و طبقه‌بندی احتراق در پلاک و دفترچه؛ صرف وجود فن کافی نیست."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q3",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 3,
+    "line": 25,
+    "question": "دودکش دوجداره یا کواکسیال چگونه کار می‌کند؟",
+    "sha256": "fbb88fcb447193811fcb26d15e2c3d6c7f013a3428bad18ea914d37074568eff",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه و مشخصات مجموعه هم‌محور تأییدشده برای مدل مورد نظر.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نقشه و مشخصات مجموعه هم‌محور تأییدشده برای مدل مورد نظر."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q4",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 4,
+    "line": 31,
+    "question": "دودکش دوجداره را می‌توان تک‌جداره کرد؟",
+    "sha256": "56336cfd58d2e1917df314bd4c5dd796a0782484649860909905ca206e67bdf9",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q5",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 5,
+    "line": 37,
+    "question": "دودکش دولوله‌ای یعنی چه؟",
+    "sha256": "bb1163aace01e9c300ae7ec78240f3c34a068a628e9b89eba93f4ee13905ebc9",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q6",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 6,
+    "line": 43,
+    "question": "هر دودکش با قطر مشابه برای هر پکیج مناسب است؟",
+    "sha256": "5a98e6724976cc4e25ff3c8a434aea4bd7618e52e704761ce6661c8d9a99484a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q7",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 7,
+    "line": 49,
+    "question": "می‌توان برای پکیج از لوله خرطومی، ناودانی یا لوله پلاستیکی معمولی استفاده کرد؟",
+    "sha256": "efd1b820fd3243c40123079a8fdb6bb206d711cd595e271c9854f9aad0eb9492",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q8",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 8,
+    "line": 55,
+    "question": "دودکش مشترک برای چند پکیج مجاز است؟",
+    "sha256": "371080e31dd05b2e5df6b7e93ee4ef706d95c0f801554453528fe05a9a9d9236",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q9",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 9,
+    "line": 63,
+    "question": "حداکثر طول دودکش همه پکیج‌ها ۳ یا ۴ متر است؟",
+    "sha256": "6a66e542bfc8f304cf57113ad31b6e2a08a5354eeca30c9a8ca936f204c7de8d",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q10",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 10,
+    "line": 69,
+    "question": "هر زانو دقیقاً یک متر از طول مجاز کم می‌کند؟",
+    "sha256": "b9588add5e4d5c80b04c8d3045d2e9b17117f91a6ee7540b02bbbdcea5510171",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q11",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 11,
+    "line": 75,
+    "question": "طول معادل یعنی چه؟",
+    "sha256": "3619a4749907449f877f8900b4de61614c33b424e62bae789f80fb8460e4127b",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q12",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 12,
+    "line": 81,
+    "question": "زانوی ابتدایی و پایانه را هم باید حساب کرد؟",
+    "sha256": "52ac2d9a845b00b5b7ea5f80c3cc4ad8549c36cef2ad54ebf47078e53d11252c",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q13",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 13,
+    "line": 87,
+    "question": "برای دودکش دولوله‌ای، طول رفت و برگشت را جمع کنیم؟",
+    "sha256": "70f0e11db2376224a8b8d2d7f00511111ed16ef030d5fa09f43f700275333ac6",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q14",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 14,
+    "line": 93,
+    "question": "افزایش قطر، هر طولی را مجاز می‌کند؟",
+    "sha256": "a0f08546948763557b19d571587706ad15cfca01fb0b65ef87fb88734d799383",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q15",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 15,
+    "line": 99,
+    "question": "برای عبور از دیوار می‌توان مقطع دودکش را کوچک یا لوله را له کرد؟",
+    "sha256": "585653afad0a9dea98e32f4af7e086208f2177c77388b17ca72a19d37e23ed92",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q16",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 16,
+    "line": 105,
+    "question": "آیا کوتاه‌ترین مسیر همیشه بدون شرط مجاز است؟",
+    "sha256": "00e839c0c84da1fdea122d0ab1974d489af8c2dacb5c8289ec2601a27537ffea",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q17",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 17,
+    "line": 111,
+    "question": "حلقه محدودکننده دودکش همیشه لازم است؟",
+    "sha256": "97c671220d26b3dca804b2f5d240fa8c9ca12b4e4100294d04d4eea87b2dc8fd",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار جدول محدودکننده و طول معادل و قطر کیت دودکش همان مدل و ویرایش.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "جدول محدودکننده و طول معادل و قطر کیت دودکش همان مدل و ویرایش."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q18",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 18,
+    "line": 117,
+    "question": "شیب دودکش باید به بیرون باشد یا به سمت پکیج؟",
+    "sha256": "ee0bee7480d6b4d641df83c900267c5dcbf9a365ddf7761f930d0f2207d3f90b",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-slope",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q19",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 19,
+    "line": 123,
+    "question": "آیا ۳ درجه یعنی ۳ درصد شیب؟",
+    "sha256": "0c1b7024e89732e746fd6e505b4d04719debb2ee279c34f255644035c2e74562",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-slope",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q20",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 20,
+    "line": 129,
+    "question": "آب جمع‌شده در دودکش یا صدای قل‌قل چه معنایی دارد؟",
+    "sha256": "d13188c3090a06d67f3a6d7d33a069291dbcf597bb35423db2cd68858ead0f59",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-slope",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q21",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 21,
+    "line": 137,
+    "question": "مرجع مقررات دودکش در ایران چیست؟",
+    "sha256": "ef0c81fffbb14d26b2eaf37f5a38c8a46b507a10980f6f674c6db9a7c1c3cad9",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار بند و تاریخ لازم‌الاجراشدن نسخه مقررات مربوط به پروژه، همراه اصلاحیه‌ها.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "بند و تاریخ لازم‌الاجراشدن نسخه مقررات مربوط به پروژه، همراه اصلاحیه‌ها."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q22",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 22,
+    "line": 143,
+    "question": "آیا می‌توان فاصله‌های دودکش خارجی را به‌عنوان قانون ایران استفاده کرد؟",
+    "sha256": "394abdc6735774d390c0e4bfcf439eb010403d1d56cab43f8842a8f85641f348",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار تطبیق بند مورد ادعا با مقررات ایران و الزامات سازنده همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "تطبیق بند مورد ادعا با مقررات ایران و الزامات سازنده همان مدل."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q23",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 23,
+    "line": 149,
+    "question": "فاصله پایانه از پنجره، در، دریچه هوا و بالکن چقدر باشد؟",
+    "sha256": "bda54603a33fbb26f5baa7b0fe4a7581763a64b3c366b26dadfeb62c7086ffdb",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نوع پایانه، نقشه محل نصب و بند معتبر فاصله از پنجره و بالکن در مقررات پروژه.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نوع پایانه، نقشه محل نصب و بند معتبر فاصله از پنجره و بالکن در مقررات پروژه."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q24",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 24,
+    "line": 155,
+    "question": "می‌توان دود را به بالکن شیشه‌ای، پاسیو بسته یا فضای مسدود تخلیه کرد؟",
+    "sha256": "18dbe24138512ee0717d8e4c6e32824011c58283b45383f144b334577fcac9cb",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار ابعاد و وضعیت تهویه محل و بند صریح مجازبودن نصب در پاسیو یا بالکن.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "ابعاد و وضعیت تهویه محل و بند صریح مجازبودن نصب در پاسیو یا بالکن."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q25",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 25,
+    "line": 161,
+    "question": "خروج دود زیر سقف بالکن یا نزدیک کنج ساختمان چه مشکلی دارد؟",
+    "sha256": "bd910dbb3b2664c4a2051bf1ece28f5e421c5c07d580f5a9eefac2fa4704cf36",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار فاصله‌ها و آرایش پایانه در دفترچه همان کیت و بررسی بازگشت محصولات احتراق.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "فاصله‌ها و آرایش پایانه در دفترچه همان کیت و بررسی بازگشت محصولات احتراق."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q26",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 26,
+    "line": 167,
+    "question": "می‌توان سر دودکش فن‌دار کلاهک H یا توری دلخواه گذاشت؟",
+    "sha256": "40619a3f740a2782ff58c916cb2554360c081050641463f929cb8729fce489e0",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q27",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 27,
+    "line": 173,
+    "question": "آیا همه دودکش‌ها باید تا بام ادامه پیدا کنند؟",
+    "sha256": "785ad2689aceefefac3521eacb7f2a30e3fa96233a74d1aa4200799bdd1b2d01",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نوع دستگاه و مسیر مجاز دودکش در دفترچه و مقررات لازم‌الاجرا.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نوع دستگاه و مسیر مجاز دودکش در دفترچه و مقررات لازم‌الاجرا."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q28",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 28,
+    "line": 179,
+    "question": "دودکش را می‌توان بدون دسترسی داخل سقف کاذب پنهان کرد؟",
+    "sha256": "e8fa4e06e48eb9ea9749365440bd36eaff106404cdf079d3250f6e0ccb3c6689",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار الزامات دسترسی و بازرسی مسیر پوشیده در مقررات پروژه و دستور کیت.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "الزامات دسترسی و بازرسی مسیر پوشیده در مقررات پروژه و دستور کیت."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q29",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 29,
+    "line": 185,
+    "question": "شیوه مهار، اتصال و آب‌بندی مهم است؟",
+    "sha256": "81d08038c0658bb75c88a73eb26dbba7d16ba69a2345db1ecf9e972459023928",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q30",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 30,
+    "line": 191,
+    "question": "عبور از دیوار یا سقف فقط با پرکردن دور لوله کافی است؟",
+    "sha256": "404e9566b2b411d4bb48b26e8f9a6b0576d47c656670c91983f423a92e42e29a",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار جزئیات عبور از جداره و مصالح و الزامات آتش‌بندی مقررات و سازنده.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "جزئیات عبور از جداره و مصالح و الزامات آتش‌بندی مقررات و سازنده."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q31",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 31,
+    "line": 197,
+    "question": "فن داشتن یعنی دیگر تهویه محل نصب مهم نیست؟",
+    "sha256": "f7a6543a9d2b7f05f188f2e60837c3733b8738a2de809f4be4fb72bf0e911ba4",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نوع احتراق و الزامات هوای احتراق و تهویه محل در دفترچه و مقررات.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نوع احتراق و الزامات هوای احتراق و تهویه محل در دفترچه و مقررات."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q32",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 32,
+    "line": 205,
+    "question": "فن روشن است ولی دستگاه جرقه نمی‌زند؛ فن سالم است؟",
+    "sha256": "7eabc4ae5958fb5f313ca06637de8cc28702220d8e3dd999612ce9dba416a98a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-air-proof",
+    "reason": "فقط پاسخ محدودِ «فن می‌چرخد ولی مشعل روشن نمی‌شود» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q33",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 33,
+    "line": 211,
+    "question": "خطای فن یا پرشر یعنی باید فن را تعویض کرد؟",
+    "sha256": "2faab6983dec0072fe10ebf6e39314af7140658b7953e38180c3847cbd13f3fe",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نمودار عیب‌یابی خطای همان مدل برای تفکیک فن، حسگر و مسیر دود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نمودار عیب‌یابی خطای همان مدل برای تفکیک فن، حسگر و مسیر دود."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q34",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 34,
+    "line": 217,
+    "question": "خطای ۴۰،۶۰،۸۰ ایران‌رادیاتور را می‌توان به همه پکیج‌ها تعمیم داد؟",
+    "sha256": "812c61d8b63bcd784016073ff2975d6eb5d618159fa9c90e9abcbbda448685d1",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار دفترچه اصلی مدل دقیق ایران‌رادیاتور و تعریف ترکیب چراغ‌های ۴۰، ۶۰ و ۸۰. نوبت دوم: نسخه نمایه‌شده دفترچه رسمی یافت شد، اما دریافت PDF اصلی ناموفق و جدول بدون تأیید بصری بود؛ تفسیر کد یا جدول سنسور از متن مخدوش منتشر نشد.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/",
+      "https://iranradiator.ir/wp-content/themes/sparkling/assets/pdf/139001212-009%20%28L%20%D8%B3%D8%B1%DB%8C%29%281%29.pdf",
+      "https://iranradiator.ir/wp-content/themes/sparkling/assets/pdf/139001744-003%20%28Eco%20%D8%B3%D8%B1%DB%8C%29.pdf"
+    ],
+    "neededEvidence": "دفترچه اصلی مدل دقیق ایران‌رادیاتور و تعریف ترکیب چراغ‌های ۴۰، ۶۰ و ۸۰."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q35",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 35,
+    "line": 223,
+    "question": "ونتوری چه نقشی در مدار پرشر هوا دارد؟",
+    "sha256": "2a61b4e02731978ae4993eeb71349d3a8c1eacb36e9bf8c1a5781b00f581482b",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه ونتوری و حسگر فشار و حدود آزمون همان مجموعه فن.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نقشه ونتوری و حسگر فشار و حدود آزمون همان مجموعه فن."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q36",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 36,
+    "line": 229,
+    "question": "شلنگ پرشر ترک‌خورده، جدا یا پر از آب باشد چه می‌شود؟",
+    "sha256": "ff68897473f7d62c24bd97b10a46857af367403bef5d23702eae90b4f6e35d6c",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه اتصال شیلنگ‌ها و معیار سلامت و وجود کندانس برای همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "نقشه اتصال شیلنگ‌ها و معیار سلامت و وجود کندانس برای همان مدل."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q37",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 37,
+    "line": 235,
+    "question": "می‌توان پرشر را یکسره کرد یا با فوت‌کردن دستگاه را روشن نگه داشت؟",
+    "sha256": "fec348be1150cb9a780ccf8133d8f00afc2dcf3072d952d1361bd6699f03de50",
+    "decision": "rewritten-merged",
+    "articleId": "ns-safety-bypass",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q38",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 38,
+    "line": 241,
+    "question": "فن اصلاً راه نمی‌افتد؛ علت چیست؟",
+    "sha256": "040a44ac6fe074ae87a049dea727d07103d9a952db029edc33b474d4a07fbd1a",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار توالی راه‌اندازی و اندازه‌گیری مجاز برق و فرمان فن طبق سند سازنده.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "توالی راه‌اندازی و اندازه‌گیری مجاز برق و فرمان فن طبق سند سازنده."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q39",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 39,
+    "line": 247,
+    "question": "فن یکسره کار می‌کند؛ آیا حتماً رله برد چسبیده است؟",
+    "sha256": "fa82cd28f78ed250667a23a6614f9a8c9b0abf5a5deb54310110fdb6f0a566c4",
+    "decision": "rewritten-merged",
+    "articleId": "ns-overrun",
+    "reason": "فقط پاسخ محدودِ «ادامه کار فن یا پمپ پس از خاموشی شعله» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q40",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 40,
+    "line": 253,
+    "question": "فن صدای زوزه یا لرزش دارد؛ با روغن‌کاری درست می‌شود؟",
+    "sha256": "e947903b2f76304a91475e5bbda6987a2162b6abb30ddbbbce92f68a1bdd2ba0",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار دستور سرویس فن همان شماره قطعه؛ روانکاری یا تعویض عمومی قابل تأیید نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "دستور سرویس فن همان شماره قطعه؛ روانکاری یا تعویض عمومی قابل تأیید نیست."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q41",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 41,
+    "line": 259,
+    "question": "در هوای بادخیز دستگاه خطای دود می‌دهد؛ چه کنیم؟",
+    "sha256": "f8156652cf8c971224bab5ed95bbb9ed7b8df7af122d88c2c01257e69eff57f0",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار بررسی مسیر و پایانه نصب‌شده در شرایط باد طبق کیت مجاز سازنده.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "بررسی مسیر و پایانه نصب‌شده در شرایط باد طبق کیت مجاز سازنده."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q42",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 42,
+    "line": 265,
+    "question": "بعد از نصب دودکش بلندتر خطا شروع شده است؛ چه بررسی شود؟",
+    "sha256": "a2665e4d7aa647cea18b2303cbe310b3fb48c364c9c337e5d571b6c7f25f065f",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q43",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 43,
+    "line": 271,
+    "question": "با بازکردن درپوش محفظه پکیج روشن می‌شود؛ می‌توان همان‌طور استفاده کرد؟",
+    "sha256": "2e86bc4cd87a77def94e16ee5e4d6642f6cca55e4259f10fd81998ec482db8fd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q44",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 44,
+    "line": 277,
+    "question": "می‌توان برای مسیر طولانی‌تر فن قوی‌تر یا فن کمکی نصب کرد؟",
+    "sha256": "c1a2b170b62e8e9479b30b51cd5b64c91dc9c649c2c2f60d8aee626ced78dd65",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q45",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 45,
+    "line": 283,
+    "question": "فن هر مدل را می‌توان با فن مشابه جایگزین کرد؟",
+    "sha256": "9a2593232239405c1ce9e6abfc8e0c40e653b2320a82d780f744ed3ee41cd5fa",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-commission",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q46",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 46,
+    "line": 291,
+    "question": "نبود بوی دود یعنی نصب ایمن است؟",
+    "sha256": "7a7d6bc0d8729fe7c5e53dcd572ae50e13a62b83f9a3bc9e09bf7f91d8567013",
+    "decision": "rewritten-merged",
+    "articleId": "ns-co-alert",
+    "reason": "فقط پاسخ محدودِ «آلارم مونوکسیدکربن یا حال بد کنار پکیج» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q47",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 47,
+    "line": 297,
+    "question": "گرم‌شدن لوله دودکش یعنی تخلیه حتماً درست است؟",
+    "sha256": "4ddc8902210f9baac665f5d8b817264a07496024b55465d9da9c66eeec6fe5e5",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش آزمون یکپارچگی و عملکرد دودکش؛ دمای سطح به‌تنهایی شاهد کافی نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://inbr.ir/دانلود-مبحث-17/"
+    ],
+    "neededEvidence": "روش آزمون یکپارچگی و عملکرد دودکش؛ دمای سطح به‌تنهایی شاهد کافی نیست."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q48",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 48,
+    "line": 303,
+    "question": "هشدار مونوکسیدکربن، دوده یا بدحالی افراد نزدیک پکیج چه اقدامی می‌خواهد؟",
+    "sha256": "3f31380a989a247461f0359b7d7c67c56c808dac696f7408c796e9abaee4c087",
+    "decision": "rewritten-merged",
+    "articleId": "ns-co-alert",
+    "reason": "فقط پاسخ محدودِ «آلارم مونوکسیدکربن یا حال بد کنار پکیج» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q49",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 49,
+    "line": 309,
+    "question": "در سرویس دوره‌ای چه چیزهایی از سامانه دود و فن بررسی شود؟",
+    "sha256": "45c06f89d0323de3b359fad467ce8b0420a04b2e9ab876fb5d5ba385a8d86543",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-integrity",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-flue-fan-installation-qa-fa-q50",
+    "file": "boiler-flue-fan-installation-qa-fa.md",
+    "number": 50,
+    "line": 315,
+    "question": "برای بررسی عددی طول و ضوابط نصب چه اطلاعاتی لازم است؟",
+    "sha256": "6f7074e5547c8e2d84b2c2031f2cbbee77670c7c5a6079c2d258abed4d4ea5bd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flue-length",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q1",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 1,
+    "line": 11,
+    "question": "فشار عقربه جلوی پکیج همان فشار گاز است؟",
+    "sha256": "a46d3160ca54c6029eb1a2ccabd2e2ef1bf630ffcf0a670e2cba376f2a6208f8",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار تعریف دقیق نمایشگر و نقاط فشار آب و گاز در دفترچه همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "تعریف دقیق نمایشگر و نقاط فشار آب و گاز در دفترچه همان مدل."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q2",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 2,
+    "line": 17,
+    "question": "شیر گاز چه وظیفه‌ای دارد؟",
+    "sha256": "8b9650403b896e27e8e0ab416f47d26a5ab7190282720d5b406e1fdba9a79fed",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ignition",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q3",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 3,
+    "line": 23,
+    "question": "پکیج جرقه می‌زند ولی شعله تشکیل نمی‌شود؛ آیا شیر گاز خراب است؟",
+    "sha256": "249e4f3b468970e5e9b0c4b7d8b89b0208733adaa9c131537ba5ea74057994e7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ignition",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q4",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 4,
+    "line": 29,
+    "question": "صدای کلیک شیر گاز شنیده می‌شود؛ یعنی سالم است؟",
+    "sha256": "683ac719581c3bd9fd1dca16f02313a5574692790a4e9c0a69db7001578165f4",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش آزمون عملکرد شیر با شماره قطعه؛ صدای کلیک اثبات عبور گاز نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "روش آزمون عملکرد شیر با شماره قطعه؛ صدای کلیک اثبات عبور گاز نیست."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q5",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 5,
+    "line": 35,
+    "question": "پکیج پس از چند بار تلاش روشن می‌شود یا با صدای بوم روشن می‌شود؛ چه کنیم؟",
+    "sha256": "eaa2e03aff43f008c6e66a14d41c73221254f1e643696f6dc705079c509c8587",
+    "decision": "rewritten-merged",
+    "articleId": "ns-delayed-ignition",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «اشتعال دیررس یا صدای غیرعادی هنگام روشن‌شدن» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q6",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 6,
+    "line": 41,
+    "question": "شعله تشکیل می‌شود ولی بلافاصله خاموش می‌شود؛ حتماً فشار گاز کم است؟",
+    "sha256": "a2ad6553fde28ec018a464f84c3f0a4b8cb7376e88398606989b672cef527e5e",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ignition",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q7",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 7,
+    "line": 47,
+    "question": "شعله ضعیف و آب ولرم است؛ فشار گاز را بیشتر کنیم؟",
+    "sha256": "e67ea01ade78223eef7ad5e8a39cfd84161ff7c82a929c0a06c0b8392bdda3a1",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار اندازه‌گیری بار، گاز و انتقال حرارت پیش از نسبت‌دادن آب ولرم به فشار گاز.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "اندازه‌گیری بار، گاز و انتقال حرارت پیش از نسبت‌دادن آب ولرم به فشار گاز."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q8",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 8,
+    "line": 53,
+    "question": "فرق فشار گاز ایستا و فشار کار چیست؟",
+    "sha256": "c68ed2fd99b5475b0fb1fccedbc380bc85850df46dec2db47d452d5c80136ee2",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q9",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 9,
+    "line": 59,
+    "question": "پکیج در مصرف کم خوب است ولی در بار زیاد کم می‌آورد؛ چه نکته‌ای مهم است؟",
+    "sha256": "fdbfb40d4d88264da0e62d50503972326f844745a0cafc0098b483385bc63c69",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q10",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 10,
+    "line": 65,
+    "question": "با روشن‌شدن هم‌زمان وسایل گازسوز، پکیج دچار افت عملکرد می‌شود؛ چه بررسی لازم است؟",
+    "sha256": "949b068e9d4f8ba00b8d620ad0a2cd9763654f46ef21e6de1a0d7183149869de",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q11",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 11,
+    "line": 71,
+    "question": "اجاق گاز خوب روشن می‌شود؛ یعنی فشار گاز پکیج حتماً مناسب است؟",
+    "sha256": "e4e0365fcd0cf7639aaee559e9b91ed57435d1f9e0b94e658eace02217c54790",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q12",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 12,
+    "line": 77,
+    "question": "فشار ورودی پایین است؛ می‌توان با تنظیم شیر گاز داخلی جبران کرد؟",
+    "sha256": "acd91397ac11e9bf24270750f7f5a20cd981d8cf015dea1e772ee450ead07fba",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q13",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 13,
+    "line": 83,
+    "question": "فشار گاز ورودی و فشار خروجی شیر گاز یک چیزند؟",
+    "sha256": "ac4c7bbaadb14e19cf664b1a70cfa2f3a685a8b67ba8ecae68be3b23e37552cf",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه نقاط فشار ورودی و خروجی و نوع شیر و مشعل همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "نقشه نقاط فشار ورودی و خروجی و نوع شیر و مشعل همان مدل."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q14",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 14,
+    "line": 89,
+    "question": "فشار استاندارد گاز همه پکیج‌ها چند است؟",
+    "sha256": "32e423d45237ea9c852248a1f76a068e090b1d54c568f365313dbba4dd3087d6",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q15",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 15,
+    "line": 95,
+    "question": "می‌توان فشار حداقل و حداکثر را از روی طول شعله تنظیم کرد؟",
+    "sha256": "1270996efa65fcca6898da8bd5b33cba9328868714e49083fe39790e578d9377",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-commission",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q16",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 16,
+    "line": 101,
+    "question": "فشار حداقل و حداکثر یعنی چه؟",
+    "sha256": "491602fa55673b7b2fdcd2601d52efcabced4d39ff74bf0049a71fc160705c42",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار جدول فشار یا نسبت احتراق حداقل و حداکثر برای مدل و نوع گاز مشخص.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "جدول فشار یا نسبت احتراق حداقل و حداکثر برای مدل و نوع گاز مشخص."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q17",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 17,
+    "line": 107,
+    "question": "آیا در سرویس دوره‌ای باید حتماً پیچ‌های شیر گاز تنظیم شوند؟",
+    "sha256": "0119d23e1d90784c91999f7444e66dae8f424831d43cf2d4f28614b34d5d1232",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-factory",
+    "reason": "فقط پاسخ محدودِ «سرویس پکیج الزاماً به معنی تنظیم پیچ شیر گاز نیست» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q18",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 18,
+    "line": 113,
+    "question": "تنظیم پکیج چگالشی همان تنظیم فشار مشعل پکیج معمولی است؟",
+    "sha256": "d15b2206d6db1c45838b7c523333cf909afe7aae369dfd9c4eef1ddc3752df71",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش تنظیم و کنترل احتراق سازنده برای دو معماری مورد مقایسه.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "روش تنظیم و کنترل احتراق سازنده برای دو معماری مورد مقایسه."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q19",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 19,
+    "line": 119,
+    "question": "بعد از تعویض شیر گاز دستگاه روشن شد؛ کار تمام است؟",
+    "sha256": "946db74255ca3d3549c37ede90b901659e47ce057a11b5784b17fde87d4752fd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-commission",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q20",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 20,
+    "line": 125,
+    "question": "می‌توان شیر گاز مشابه ظاهری را جایگزین کرد؟",
+    "sha256": "a9aa5ad92ff2fe67b5e34c65ad334aa5ad517472615af879f9abb9e625fb2c29",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-commission",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q21",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 21,
+    "line": 131,
+    "question": "می‌توان شیر گاز را مستقیم به برق وصل کرد یا مدار ایمنی را پل زد تا امتحان شود؟",
+    "sha256": "a73432001693cb9806dd04c355a6b82f87a437fadcd250c16de660401452a55b",
+    "decision": "rewritten-merged",
+    "articleId": "ns-safety-bypass",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q22",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 22,
+    "line": 137,
+    "question": "می‌توان با نیمه‌بستن شیر قطع‌و‌وصل زیر پکیج، فشار را تنظیم کرد؟",
+    "sha256": "8ea85d3d79254087e7d4586b0f23c253b1aa35619bed21f0f4c2c6af81291096",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-load",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q23",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 23,
+    "line": 143,
+    "question": "تبدیل گاز شهری به گاز مایع فقط با تنظیم پیچ شیر انجام می‌شود؟",
+    "sha256": "52be42a5fbe1c7e5d361b253fcb4e2c05d0e97c87789df20a0c20cc420a109dc",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار دستور و کیت رسمی تبدیل نوع گاز برای همان مدل و شماره سریال.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "دستور و کیت رسمی تبدیل نوع گاز برای همان مدل و شماره سریال."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q24",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 24,
+    "line": 149,
+    "question": "تست نشتی گاز با فندک یا کبریت مجاز است؟",
+    "sha256": "ea11d0cbcef8c11241276c76fdd030bbf5ae4b74cb738b11674c788387f83be7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-smell",
+    "reason": "نوبت دوم: منع ایجاد شعله هنگام احتمال نشت با دستور صریح سازنده تطبیق یافت و به کارت اقدام اضطراری متصل شد؛ روش اجرایی تست نشتی منتشر نشده است.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q25",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 25,
+    "line": 155,
+    "question": "برای هواگیری مسیر گاز، اتصال را کمی باز کنیم؟",
+    "sha256": "f934d1f82fdae1948dd4170633e254c52f409774a2342795cf24bb074cc556b7",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش رسمی تخلیه و راه‌اندازی خط گاز و صلاحیت و شرایط ایمنی اجرا.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "روش رسمی تخلیه و راه‌اندازی خط گاز و صلاحیت و شرایط ایمنی اجرا."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q26",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 26,
+    "line": 161,
+    "question": "اگر بوی گاز نزدیک پکیج باشد چه کنیم؟",
+    "sha256": "d46476efe8b4527c9c891c9940c08953af69d01cbab6d08c431c60a6ae9c5ec7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-smell",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q27",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 27,
+    "line": 167,
+    "question": "اگر هشدار مونوکسیدکربن فعال شود، می‌توان با تنظیم گاز مشکل را برطرف کرد؟",
+    "sha256": "420ff383780e380663a4ffc93bcf4587b225281a1a0096dc075182f694213ce7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-co-alert",
+    "reason": "فقط پاسخ محدودِ «آلارم مونوکسیدکربن یا حال بد کنار پکیج» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q28",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 28,
+    "line": 173,
+    "question": "آیا فشار تست نشتی همان فشار کار دستگاه است؟",
+    "sha256": "a02647d25871c03ce5f8c298f9427ad0705a4e441bbffcf34152eed861b385c1",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-pressure-test",
+    "reason": "فقط پاسخ محدودِ «فشار آزمون لوله گاز با فشار کار دستگاه یکسان نیست» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-gas-valve-pressure-qa-fa-q29",
+    "file": "boiler-gas-valve-pressure-qa-fa.md",
+    "number": 29,
+    "line": 179,
+    "question": "از سرویسکار چه گزارش مشخصی بخواهیم؟",
+    "sha256": "da3ec9fdb6566dfe3c118a727f8d917aff77be6efb30e3dd8b922c794736cb4b",
+    "decision": "rewritten-merged",
+    "articleId": "ns-gas-commission",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q1",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 1,
+    "line": 22,
+    "question": "از روی جای لوله‌ها می‌توان گفت کدام رفت و کدام برگشت است؟",
+    "sha256": "1f088d6dc62a53db6db544f2353e022c11b1f2348363562f64c31708200655f8",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه اتصالات همان مدل برای تعیین محل و ترتیب لوله‌ها.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "نقشه اتصالات همان مدل برای تعیین محل و ترتیب لوله‌ها."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q2",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 2,
+    "line": 28,
+    "question": "کدام لوله‌ها در این بررسی مهم‌اند؟",
+    "sha256": "253ec63c891a2617559796f85fa6aeea715fb63fb09b4517d51c4834a4bfbae1",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه هیدرولیک همان مدل و روش شناسایی ایمن چهار اتصال آب.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "نقشه هیدرولیک همان مدل و روش شناسایی ایمن چهار اتصال آب."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q3",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 3,
+    "line": 34,
+    "question": "آیا باید لوله‌ها را با دست بگیریم؟",
+    "sha256": "26445f48ed879b746987c82f5f224afeb219787a83fcb397fca4d058f45eb9a8",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش اندازه‌گیری دمای سطح و شرایط تماس حسگر؛ لمس دست معیار معتبر نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "روش اندازه‌گیری دمای سطح و شرایط تماس حسگر؛ لمس دست معیار معتبر نیست."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q4",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 4,
+    "line": 40,
+    "question": "دماسنج لیزری روی لوله مسی یا شلنگ براق دقیق است؟",
+    "sha256": "1405e864a1221fddba524760c88ab2f404a0fd8e1d43c99a8324f3ed310bfab1",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ir-temperature",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q5",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 5,
+    "line": 46,
+    "question": "دمای سطح لوله همان دمای آب داخل آن است؟",
+    "sha256": "d39a735fb8b293e13dc71ed9506c7969efc8f7edba9158d8c192876ba4b712b7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ir-temperature",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q6",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 6,
+    "line": 52,
+    "question": "برای تست گرمایش چه شرایطی لازم است؟",
+    "sha256": "0ac70de3eb88bb8b8e0169ca0aca45439c9c745fe5324cdcc59562fd7235ff6d",
+    "decision": "rewritten-merged",
+    "articleId": "ns-steady-temperature",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «دمای لحظه شروع را با حالت پایدار اشتباه نگیریم» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/en-us/blog/3-site-measurements-circuit-performance"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q7",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 7,
+    "line": 58,
+    "question": "برای تست آب مصرفی چه شرایطی لازم است؟",
+    "sha256": "3c797fe1b49ca55b5dff241525b4b535fce6cd71b1d2e203d52925ec0d0b7d17",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار شرایط آزمون آب مصرفی و روش تفکیک گرمای باقیمانده در همان معماری.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "شرایط آزمون آب مصرفی و روش تفکیک گرمای باقیمانده در همان معماری."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q8",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 8,
+    "line": 64,
+    "question": "در گرمایش سالم، رفت و برگشت چه الگویی دارند؟",
+    "sha256": "ac81085d491214e482f0b4463b23a44caf37100fa8ce143be43e2cee2a580cdf",
+    "decision": "rewritten-merged",
+    "articleId": "ns-temperature-difference",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «اختلاف دمای رفت و برگشت عدد ثابتِ سلامت نیست» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q9",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 9,
+    "line": 70,
+    "question": "اختلاف دمای سالم همیشه ۱۰ تا ۱۵ یا ۲۰ درجه است؟",
+    "sha256": "530f3921af9522355905e78aae5e648ebc4c09be2d7097847850540c7a00dd43",
+    "decision": "rewritten-merged",
+    "articleId": "ns-temperature-difference",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «اختلاف دمای رفت و برگشت عدد ثابتِ سلامت نیست» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q10",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 10,
+    "line": 76,
+    "question": "در گرمایش، رفت داغ و برگشت سرد است؛ علت چیست؟",
+    "sha256": "f7e0346655b6171403c94dbc1bd7ac8ec50dfbafa4ce4cc3aa93588fc8ef6e31",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار دبی واقعی و آزمون گرفتگی یا پمپ؛ اختلاف دما علت را قطعی نمی‌کند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "دبی واقعی و آزمون گرفتگی یا پمپ؛ اختلاف دما علت را قطعی نمی‌کند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q11",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 11,
+    "line": 82,
+    "question": "رفت خیلی سریع داغ می‌شود، دستگاه قطع می‌کند و برگشت سرد است؛ چه چیزی بررسی شود؟",
+    "sha256": "fe69096bc58c3149b9165886ac0527f2d5b1289371c04f2321205f8d37c81d56",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q12",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 12,
+    "line": 88,
+    "question": "رفت و برگشت هر دو سردند و شوفاژها گرم نمی‌شوند؛ علت چیست؟",
+    "sha256": "f7db61c035e711c781b0189c90c92de665cbab5d416e87761335d36f00bea82a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-heat-command",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q13",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 13,
+    "line": 94,
+    "question": "رفت و برگشت نزدیک پکیج گرم‌اند ولی رادیاتورها سردند؛ علت چیست؟",
+    "sha256": "d458c1ef499676d0c262248cff7febfaf989d5209b05c7faa1931310415ae633",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه بای‌پس و توزیع مدار و اندازه‌گیری دبی رادیاتورها.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "نقشه بای‌پس و توزیع مدار و اندازه‌گیری دبی رادیاتورها."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q14",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 14,
+    "line": 100,
+    "question": "رفت و برگشت تقریباً هم‌دما هستند؛ پمپ حتماً خراب است؟",
+    "sha256": "602ee776352fe471e3485537e9c018e2977f3f61a8f9decc6dc93dc0b4feedd3",
+    "decision": "rewritten-merged",
+    "articleId": "ns-temperature-difference",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «اختلاف دمای رفت و برگشت عدد ثابتِ سلامت نیست» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q15",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 15,
+    "line": 106,
+    "question": "اختلاف رفت و برگشت زیاد است؛ پمپ را تندتر کنیم؟",
+    "sha256": "ba85c5dffbfb856e245d479026b176acc3691c383906753b2288ee21daf03bd8",
+    "decision": "rewritten-merged",
+    "articleId": "ns-pump-operating-point",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «تعویض پمپ یا افزایش دور، گردش کافی را تضمین نمی‌کند» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q16",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 16,
+    "line": 112,
+    "question": "برگشت از رفت گرم‌تر به نظر می‌رسد؛ اتصال‌ها جابه‌جا هستند؟",
+    "sha256": "ada94d94ad2c36ee4dcf88126954024b7482f18444db9864607a6b89622046e3",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ir-temperature",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q17",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 17,
+    "line": 118,
+    "question": "رفت نزدیک دستگاه داغ ولی لوله در فاصله دور سرد است؛ علت چیست؟",
+    "sha256": "8f58a8cce49358f2e637cb70d9bb6edd8b44d6f28890b06614974bfbcbdcd12a",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه توزیع و بالانس و دبی شاخه نزدیک و دور در شرایط یکسان.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "نقشه توزیع و بالانس و دبی شاخه نزدیک و دور در شرایط یکسان."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q18",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 18,
+    "line": 124,
+    "question": "بعد از هواگیری، برگشت گرم می‌شود و رادیاتورها بهتر کار می‌کنند؛ چه نتیجه‌ای دارد؟",
+    "sha256": "91a8f1852dfcb9b119efb48b60a4d56f75416f125c0eb663668003d1c979c6c6",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-air",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q19",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 19,
+    "line": 130,
+    "question": "در مصرف آب گرم، ورودی سرد و خروجی گرم است؛ یعنی همه چیز سالم است؟",
+    "sha256": "1bcc4d344785da13ec35f50523eb7f8cf31e48f81bbaadd408a833cf8d9ec554",
+    "decision": "rewritten-merged",
+    "articleId": "ns-heat-output-evidence",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «داغی لوله، توان کافی آب گرم را ثابت نمی‌کند» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q20",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 20,
+    "line": 136,
+    "question": "با بازکردن آب گرم، خروجی مصرفی سرد می‌ماند و شعله روشن نمی‌شود؛ علت چیست؟",
+    "sha256": "abb4d11d43436be171e04e0d6b458709edb7bbdf1651f6c9b81136bdf6825617",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-demand",
+    "reason": "فقط پاسخ محدودِ «بازکردن شیر آب و ثبت تقاضای آب گرم» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q21",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 21,
+    "line": 142,
+    "question": "شعله روشن است اما خروجی آب گرم مصرفی سرد یا ولرم است؛ علت چیست؟",
+    "sha256": "8c5b164b9734d2b557b5a06ee137281a8461b31ad98ca9ca3804dd1cf714d76c",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار اندازه‌گیری دبی و بار و انتقال حرارت و نقشه مسیر آب همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "اندازه‌گیری دبی و بار و انتقال حرارت و نقشه مسیر آب همان مدل."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q22",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 22,
+    "line": 148,
+    "question": "در حالت آب گرم، لوله رفت شوفاژ هم داغ می‌شود؛ شیر سه‌طرفه خراب است؟",
+    "sha256": "697e681f6a0beeedc8e26399c9c7910b4953888b4a3ed0adf121e07124ed863a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q23",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 23,
+    "line": 154,
+    "question": "فقط چند سانتی‌متر از لوله شوفاژ گرم شده ولی رادیاتورها سردند؛ طبیعی است؟",
+    "sha256": "edb579c26e64bc71578a9bd19636b951749e2804eafc62e1f6cb86accbf2b0dd",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار شرایط آزمون نشتی شیر انحرافی و تفکیک هدایت حرارت نزدیک بدنه.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "شرایط آزمون نشتی شیر انحرافی و تفکیک هدایت حرارت نزدیک بدنه."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q24",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 24,
+    "line": 160,
+    "question": "هم‌زمان با مصرف آب گرم، چند رادیاتور گرم و آب مصرفی ولرم می‌شود؛ علت چیست؟",
+    "sha256": "6f10c43e6bbff1d7c952cacb88f1832e13bc8e5b733c80ed92f0510e36e44af9",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q25",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 25,
+    "line": 166,
+    "question": "بعد از بستن آب گرم، لوله‌ها همچنان گرم می‌مانند؛ ایراد است؟",
+    "sha256": "e0c2b393e74f43a4f0312ecc42be49fa473e336c935dc4b7e7268b9b1f7383c3",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار توالی پس‌گردش و منحنی سردشدن همان مدل؛ گرمای باقیمانده به‌تنهایی کافی نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "توالی پس‌گردش و منحنی سردشدن همان مدل؛ گرمای باقیمانده به‌تنهایی کافی نیست."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q26",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 26,
+    "line": 172,
+    "question": "لوله خروجی آب گرم کنار پکیج داغ است ولی فقط یک شیر آب سرد می‌دهد؛ علت چیست؟",
+    "sha256": "979bf0822a8c0ef5b336d6004be111ddfecb9b5942c9343a09ac91156f983643",
+    "decision": "rewritten-merged",
+    "articleId": "ns-dhw-mixing",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «آب یک شیر سرد است؛ اختلاط محلی را هم بررسی کنیم» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q27",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 27,
+    "line": 178,
+    "question": "لوله خروجی گرم است ولی همه شیرها ولرم‌اند؛ مبدل سالم است؟",
+    "sha256": "418b5e339d932ab1a32526708cd183e5454f19195b2cb263931aadd95bd732f5",
+    "decision": "rewritten-merged",
+    "articleId": "ns-heat-output-evidence",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «داغی لوله، توان کافی آب گرم را ثابت نمی‌کند» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_16_NA_Circulation%20in%20hydronic%20systems.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q28",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 28,
+    "line": 184,
+    "question": "در دبی کم آب گرم است و با بازکردن بیشتر شیر سرد می‌شود؛ یعنی مبدل رسوب دارد؟",
+    "sha256": "662d8c43ff9471715e51272c4de63e5644c13e024c8a3aa4438c5ddc0afec834",
+    "decision": "rewritten-merged",
+    "articleId": "ns-water-flow",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q29",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 29,
+    "line": 190,
+    "question": "دمای لوله خروجی مصرفی هم‌زمان با آب شیر بالا و پایین می‌شود؛ چه می‌فهمیم؟",
+    "sha256": "4979ca0e493af81e6090f7e966fa0deb1161245ec23863c6f0473164db607ab6",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار ثبت هم‌زمان دما در خروجی دستگاه و شیر مصرف برای یافتن محل نوسان.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "ثبت هم‌زمان دما در خروجی دستگاه و شیر مصرف برای یافتن محل نوسان."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q30",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 30,
+    "line": 196,
+    "question": "ورودی آب سرد کنار پکیج ولرم شده است؛ مبدل سوراخ است؟",
+    "sha256": "c7993aba290df033aa7b67fdc8ca109b74743cc1448dfaa80d7bc0570854ed6f",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار آزمون نشتی بین مدارها طبق سازنده؛ گرم‌شدن ورودی به‌تنهایی کافی نیست.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "آزمون نشتی بین مدارها طبق سازنده؛ گرم‌شدن ورودی به‌تنهایی کافی نیست."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q31",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 31,
+    "line": 202,
+    "question": "از روی این تست می‌توان بای‌پس را قطعی خراب دانست؟",
+    "sha256": "e5ef12cc5bb41032dcd41327fd870da5f92d78b80b09610286db4358be934ef0",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش آزمون بای‌پس همان مدل و شرایط دبی و اختلاف فشار.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299",
+      "https://professional.vaillant.co.uk/downloads/home-manuals/0020224355-01-1010688.pdf"
+    ],
+    "neededEvidence": "روش آزمون بای‌پس همان مدل و شرایط دبی و اختلاف فشار."
+  },
+  {
+    "id": "boiler-pipe-temperature-diagnosis-qa-fa-q32",
+    "file": "boiler-pipe-temperature-diagnosis-qa-fa.md",
+    "number": 32,
+    "line": 208,
+    "question": "آیا این الگوها برای پکیج تک‌مبدل و دومبدل یکسان‌اند؟",
+    "sha256": "f82cca47e9a5673f6c7d9a15f9e1e02e23353d588a453b96302a4af21d701424",
+    "decision": "rewritten-merged",
+    "articleId": "ns-diverter",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q1",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 1,
+    "line": 13,
+    "question": "آیا هر صدایی از پکیج نشانه خرابی است؟",
+    "sha256": "19b693791e64dc22e0c1e2f44f613852a5e7d762004bb88d96a5e06050e84fa7",
+    "decision": "rewritten-merged",
+    "articleId": "ns-normal-noise",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q2",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 2,
+    "line": 19,
+    "question": "پکیج هنگام روشن‌شدن صدای انفجار یا «بوم» می‌دهد؛ علت چیست؟",
+    "sha256": "c860ddec4623d4828998c3f1d3c60e509e5543b214d123708c6690db597d7fec",
+    "decision": "rewritten-merged",
+    "articleId": "ns-delayed-ignition",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «اشتعال دیررس یا صدای غیرعادی هنگام روشن‌شدن» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/6720891161"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q3",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 3,
+    "line": 25,
+    "question": "قبل از روشن‌شدن شعله، صدای جرقه طولانی یا تکراری شنیده می‌شود؛ مشکل چیست؟",
+    "sha256": "7f1bf01763cdf0fcacbf97d3d45cd5cf6e26a0bf0a4dbf17b90a8e3a80a3e0ff",
+    "decision": "rewritten-merged",
+    "articleId": "ns-ignition",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q4",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 4,
+    "line": 31,
+    "question": "هنگام کارکرد، صدای جوشیدن یا کتری از پکیج می‌آید؛ علت چیست؟",
+    "sha256": "86845ed5a1aa9c6744707adca271d760a1c7dcfc7bf736e9201a64c65109879c",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q5",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 5,
+    "line": 37,
+    "question": "صدای کوبش با بالا رفتن سریع دمای پکیج همراه است؛ چه چیزی بررسی شود؟",
+    "sha256": "e84cd753a17f44371b3afa96cad9c1ac237b5790aef126dfe02a0557320f09bd",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q6",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 6,
+    "line": 43,
+    "question": "صدای سوت از پکیج می‌آید؛ آیا حتماً مبدل رسوب گرفته است؟",
+    "sha256": "e1b1d9829c148ae260303bfe021e180388555ace0f24e13d5951beca860b3a56",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q7",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 7,
+    "line": 49,
+    "question": "صدای قل‌قل یا شرشر داخل پکیج و رادیاتورها شنیده می‌شود؛ علت چیست؟",
+    "sha256": "0cb73346de31425f3dea3093603f8955f856d704d40890132ce4566a156a7b1a",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-air",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q8",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 8,
+    "line": 55,
+    "question": "پس از پرکردن مدار یا سرویس، صدای آب و قل‌قل شروع شده است؛ علت چیست؟",
+    "sha256": "e12104192cea7c1b8f5dd5afe9e0ac8a4abb118d9ff55da7b633b3d328a39433",
+    "decision": "rewritten-merged",
+    "articleId": "ns-radiator-air",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q9",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 9,
+    "line": 61,
+    "question": "هواگیری انجام شده ولی صدا برمی‌گردد؛ چه کنیم؟",
+    "sha256": "5b17c5f0e6c25c645ad079e699ce73b69d8d8e2f73e4a369805d82bdc965a88e",
+    "decision": "rewritten-merged",
+    "articleId": "ns-system-pressure",
+    "reason": "فقط پاسخ محدودِ «افت فشار مدار گرمایش و نیاز مکرر به آبگیری» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q10",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 10,
+    "line": 67,
+    "question": "پکیج صدای وزوز یا هوم بلند و یکنواخت می‌دهد؛ علت چیست؟",
+    "sha256": "817be331c22f558665cb41695577bc6cac08df34632d142efb6da91c802c7854",
+    "decision": "rewritten-merged",
+    "articleId": "ns-humming",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «وزوز یکنواخت پکیج؛ پمپ و فن را از روی صدا محکوم نکنیم» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q11",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 11,
+    "line": 73,
+    "question": "صدای وزوز همراه با گرم‌نشدن رادیاتورهاست؛ کدام قطعه مشکوک است؟",
+    "sha256": "133753bd5bdc9ade9568a452ee3182ee3c0addaa64e67a441ab8c4c2481e2df7",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار اندازه‌گیری گردش و فرمان پمپ؛ وزوز همراه رادیاتور سرد قطعه را قطعی نمی‌کند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "اندازه‌گیری گردش و فرمان پمپ؛ وزوز همراه رادیاتور سرد قطعه را قطعی نمی‌کند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q12",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 12,
+    "line": 79,
+    "question": "پمپ صدای ساییدگی یا خرخر می‌دهد؛ علت چیست؟",
+    "sha256": "707fdc6331729a796f244438f9c10f297d57a44eb8dbc5120f3ebc784352347b",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار روش آزمون پمپ و تفکیک هوا، سایش و محدودیت دبی با شاهد قابل تکرار.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "روش آزمون پمپ و تفکیک هوا، سایش و محدودیت دبی با شاهد قابل تکرار."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q13",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 13,
+    "line": 85,
+    "question": "صدای زوزه و لرزش قبل از تشکیل شعله شروع می‌شود؛ چه چیزی بررسی شود؟",
+    "sha256": "3b92e6e1ff1dcd6908d3b0a3ffc22b97ca0fcd7c94bbbd86c2df33cba1d49be5",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار توالی پیش از شعله و آزمون فن؛ زمان صدا به‌تنهایی منبع آن را ثابت نمی‌کند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "توالی پیش از شعله و آزمون فن؛ زمان صدا به‌تنهایی منبع آن را ثابت نمی‌کند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q14",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 14,
+    "line": 91,
+    "question": "فن صدای جیغ، ساییدگی یا لرزش غیرعادی دارد؛ علت چیست؟",
+    "sha256": "b9d9662de3be469aca68bee195fed13ab8c8b5b54d69206b37086758c4522e3e",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار راهنمای سرویس فن و معیار فرسودگی یاتاقان همان شماره قطعه.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "راهنمای سرویس فن و معیار فرسودگی یاتاقان همان شماره قطعه."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q15",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 15,
+    "line": 97,
+    "question": "صدای تق‌تق خفیف هنگام گرم‌شدن و سردشدن لوله‌ها می‌آید؛ علت چیست؟",
+    "sha256": "1bd34c865f6fbdfbc4104e449eca16a37b74cdf9bc047a30a88a37402823d238",
+    "decision": "rewritten-merged",
+    "articleId": "ns-pipe-expansion",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q16",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 16,
+    "line": 103,
+    "question": "بدنه پکیج می‌لرزد و صدای ورق فلزی می‌دهد؛ علت چیست؟",
+    "sha256": "cf77facdb49ca0456550a7790ef7fe8377ab2ed33e90838a8757ed19b59f70b3",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقاط اتصال و الزامات بسته‌بودن محفظه در دفترچه همان مدل.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "نقاط اتصال و الزامات بسته‌بودن محفظه در دفترچه همان مدل."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q17",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 17,
+    "line": 109,
+    "question": "با بستن ناگهانی شیر آب صدای تقه در لوله و پکیج می‌آید؛ علت چیست؟",
+    "sha256": "b8c784fbe494cff47b9cfb87ae8f81eee5a7870832ec60b3c651d8cac7570612",
+    "decision": "rewritten-merged",
+    "articleId": "ns-water-hammer",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q18",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 18,
+    "line": 115,
+    "question": "با باز و بسته شدن شیر آب نقطه دیگری از خانه، پکیج هم تقه می‌زند؛ علت چیست؟",
+    "sha256": "357c235b2464ef2cf17cad5e60db8cb4fc90bb7f69018d059e8e27fc267b2ccf",
+    "decision": "rewritten-merged",
+    "articleId": "ns-water-hammer",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q19",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 19,
+    "line": 121,
+    "question": "رادیاتورها صدای جریان شدید، هیس یا زوزه دارند؛ علت چیست؟",
+    "sha256": "91ff53a527493d8853f4a69c85da6a0fac6b4d5080bc4efa1b2cb51491f78429",
+    "decision": "rewritten-merged",
+    "articleId": "ns-flow-noise",
+    "reason": "بازبینی نوبت دوم فاز ۹: فقط بازنویسی محدودِ «صدای جریان در رادیاتور و لوله؛ دور پمپ تنها عامل نیست» با مرجع اصلی منتشر شد؛ علت قطعی قطعه و تمام جزئیات پاسخ اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.caleffi.com/sites/default/files/media/external-file/Idronics_8_NA_Hydronic%20balancing.pdf"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q20",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 20,
+    "line": 127,
+    "question": "صدا فقط هنگام آب گرم مصرفی شنیده می‌شود؛ علت چیست؟",
+    "sha256": "d4085e457c2672e518a51352ea505931b1ac9ae6b0a1eb3275bbabf01b211424",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار نقشه تک‌مبدل یا دومبدل و آزمون علت صدا در حالت مصرفی.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "نقشه تک‌مبدل یا دومبدل و آزمون علت صدا در حالت مصرفی."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q21",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 21,
+    "line": 133,
+    "question": "بعد از خاموش‌شدن شعله هنوز صدای آرام شنیده می‌شود؛ آیا خرابی است؟",
+    "sha256": "e87496f3597c97d942107d897152ce5ff48029e6a63bd8c31a10e46269d3d414",
+    "decision": "rewritten-merged",
+    "articleId": "ns-overrun",
+    "reason": "فقط پاسخ محدودِ «ادامه کار فن یا پمپ پس از خاموشی شعله» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.worcester-bosch.co.uk/support/literature/download/8716145299"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q22",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 22,
+    "line": 139,
+    "question": "در پکیج چگالشی صدای قل‌قل همراه با خطای روشن‌شدن وجود دارد؛ علت چیست؟",
+    "sha256": "e5fbd5aa83afee2fbb57d36617322c4a111741664103c3f832bf5a572238137c",
+    "decision": "rewritten-merged",
+    "articleId": "ns-condensate-cold",
+    "reason": "فقط پاسخ محدودِ «قل‌قل و روشن‌نشدن پکیج چگالشی در سرمای شدید» با منبع اصلی بازنویسی شد؛ همه علت‌ها، ترتیب آزمون‌ها و قطعیت‌های متن اولیه تأیید نشده‌اند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/"
+    ],
+    "neededEvidence": null
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q23",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 23,
+    "line": 145,
+    "question": "صدای چکه یا شرشر همراه با آب زیر پکیج شنیده می‌شود؛ چه کنیم؟",
+    "sha256": "95c9c0a93377a420d00c51df8d51e0b332c1db0387f53890f8b8a16394af577f",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار محل دقیق نشت و نقشه مدار و روش تشخیص منبع آب بدون تماس با برق.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "محل دقیق نشت و نقشه مدار و روش تشخیص منبع آب بدون تماس با برق."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q24",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 24,
+    "line": 151,
+    "question": "صدا پس از سرویس یا تعویض قطعه شروع شده است؛ چه چیزی بررسی شود؟",
+    "sha256": "71968232f3345c045d2ad6c9e2115a48a95c008e127c99ad0fc57a2966e2b1b8",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار فهرست کار سرویس و آزمون قبل و بعد؛ هم‌زمانی به‌تنهایی علت را ثابت نمی‌کند.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "فهرست کار سرویس و آزمون قبل و بعد؛ هم‌زمانی به‌تنهایی علت را ثابت نمی‌کند."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q25",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 25,
+    "line": 157,
+    "question": "کدام صداها نیازمند توقف استفاده‌اند؟",
+    "sha256": "9a65d7333d23d7e26a471ecb9527ca515e3fbb706e6470806c178d928f941025",
+    "decision": "needs-evidence",
+    "articleId": null,
+    "reason": "بازبینی فاز ۹: منابع اصلی بررسی‌شده برای تأیید کامل پاسخ اولیه و تعمیم آن کافی نیستند؛ در انتظار دستور توقف و اقدام متناسب با هر نشانه خطر؛ فهرست اولیه نباید تشخیص واحد تلقی شود.",
+    "reviewedAt": "2026-11-18",
+    "checkedSources": [
+      "https://www.vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-making-a-noise/",
+      "https://vaillant.co.uk/advice/understanding-heating-technology/boilers/why-is-my-boiler-losing-pressure/",
+      "https://www.vaillant.co.uk/advice/heating-tips/winter-weather-advice/getting-ready-for-winter-your-condensate-pipe/",
+      "https://www.gassaferegister.co.uk/media/3570/32492_gsr_lit_guidetosafety_a5_aw1_l6p12-21v1-2.pdf"
+    ],
+    "neededEvidence": "دستور توقف و اقدام متناسب با هر نشانه خطر؛ فهرست اولیه نباید تشخیص واحد تلقی شود."
+  },
+  {
+    "id": "boiler-unusual-noises-qa-fa-q26",
+    "file": "boiler-unusual-noises-qa-fa.md",
+    "number": 26,
+    "line": 163,
+    "question": "آیا با شنیدن سوت یا کوبش باید فوراً مبدل را اسیدشویی یا تعویض کرد؟",
+    "sha256": "aef557848737d02385c909065393a47f9f16b02c9099942887fe03c357c1de2b",
+    "decision": "rewritten-merged",
+    "articleId": "ns-kettling",
+    "reason": "فقط پاسخ بازنویسی‌شده و دامنه محدود کارت مقصد قابل استفاده است؛ تمام ادعاهای متن اولیه تأیید نشده‌اند."
+  }
+]

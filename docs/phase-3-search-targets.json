@@ -1,0 +1,105 @@
+[
+  {
+    "query": "آب در دبی کم گرم است و با بازکردن شیر سرد می‌شود",
+    "expectedArticleId": "ns-water-flow",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "آب گرم و شوفاژ: چه زمانی شیر سه‌طرفه مشکوک است؟",
+    "expectedArticleId": "ns-diverter",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "آب گرم داریم ولی فرمان گرمایش اجرا نمی‌شود",
+    "expectedArticleId": "ns-heat-command",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "بالای رادیاتور سرد است یا صدای قل‌قل دارد",
+    "expectedArticleId": "ns-radiator-air",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "صدای کتری، سوت یا کوبش همراه با داغ‌شدن",
+    "expectedArticleId": "ns-kettling",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "آیا هر صدای پکیج به معنی خرابی است؟",
+    "expectedArticleId": "ns-normal-noise",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "تق‌تق هنگام گرم و سرد شدن لوله‌ها",
+    "expectedArticleId": "ns-pipe-expansion",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "تقه هنگام بستن شیر آب یا مصرف در نقطه دیگر",
+    "expectedArticleId": "ns-water-hammer",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "خطای دماسنج لیزری روی لوله براق",
+    "expectedArticleId": "ns-ir-temperature",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "جرقه هست ولی شعله تشکیل نمی‌شود؛ شیر گاز خراب است؟",
+    "expectedArticleId": "ns-ignition",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "فشار گاز در بار بالا و مصرف هم‌زمان",
+    "expectedArticleId": "ns-gas-load",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "بعد از تعویض شیر گاز یا قطعه مشابه چه چیزی مهم است؟",
+    "expectedArticleId": "ns-gas-commission",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "طول مجاز دودکش و اثر زانوها را چگونه انتخاب کنیم؟",
+    "expectedArticleId": "ns-flue-length",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "اتصالات، مهار و تغییر خودسرانه دودکش",
+    "expectedArticleId": "ns-flue-integrity",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "شیب دودکش و تفاوت درجه با درصد",
+    "expectedArticleId": "ns-flue-slope",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "یکسره‌کردن پرشر یا اتصال مستقیم برای راه‌اندازی",
+    "expectedArticleId": "ns-safety-bypass",
+    "scope": "general",
+    "review": "source-checked"
+  },
+  {
+    "query": "بوی گاز نزدیک پکیج: اقدام فوری",
+    "expectedArticleId": "ns-gas-smell",
+    "scope": "general",
+    "review": "source-checked"
+  }
+]
+

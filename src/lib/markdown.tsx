@@ -1,96 +1,186 @@
 import type { ReactNode } from "react";
+import { headingAnchor, markdownLines } from "./markdown-lines";
+import { highlightParts, queryTokens } from "./search";
 
-// Minimal Persian-friendly markdown renderer for note bodies:
-// supports ## / ### headings, - and 1. lists, **bold**, tables, and paragraphs.
-function renderInline(text: string): ReactNode[] {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return parts.map((part, i) =>
-    part.startsWith("**") && part.endsWith("**") ? (
-      <strong key={i} className="font-bold text-foreground">
-        {part.slice(2, -2)}
-      </strong>
+function safeContentUrl(value: string): string | null {
+  if (/^https?:\/\//i.test(value) || /^\/(?!\/)/.test(value) || value.startsWith("#")) return value;
+  return null;
+}
+function highlight(text: string, tokens: ReadonlySet<string>): ReactNode {
+  if (!tokens.size) return text;
+  return highlightParts(text, tokens).map((part, index) =>
+    part.hit ? (
+      <mark key={index} className="rounded bg-primary/25 text-inherit">
+        {part.text}
+      </mark>
     ) : (
-      <span key={i}>{part}</span>
+      part.text
     ),
   );
 }
-
-const isTableRow = (l: string) => l.startsWith("|") && l.endsWith("|") && l.length > 2;
-const isDivider = (l: string) => /^\|[\s:|-]+\|$/.test(l);
-const cells = (l: string) =>
-  l
+function renderInline(text: string, tokens: ReadonlySet<string>): ReactNode[] {
+  const parts = text
+    .replace(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/g, (_match, target, label) => label || target)
+    .split(
+      /(!?\[[^\]]*\]\([^)]+\)|\*\*[^*]+\*\*|\x60[^\x60]+\x60|[a-zA-Z][a-zA-Z0-9_.:/-]*|[0-9۰-۹٠-٩]+(?:[.:/][0-9۰-۹٠-٩]+)*)/g,
+    );
+  return parts.map((part, index) => {
+    const link = part.match(/^(!?)\[([^\]]*)\]\(([^)]+)\)$/);
+    if (link) {
+      const url = safeContentUrl(link[3]!);
+      if (!url) return <span key={index}>{highlight(link[2]!, tokens)}</span>;
+      if (link[1])
+        return (
+          <img
+            key={index}
+            src={url}
+            alt={link[2]}
+            loading="lazy"
+            className="my-3 h-auto max-w-full rounded-xl"
+          />
+        );
+      return (
+        <a
+          key={index}
+          href={url}
+          className="text-primary underline underline-offset-4"
+          target={url.startsWith("http") ? "_blank" : undefined}
+          rel="noopener noreferrer"
+        >
+          {highlight(link[2]!, tokens)}
+        </a>
+      );
+    }
+    if (part.startsWith("**") && part.endsWith("**"))
+      return <strong key={index}>{renderInline(part.slice(2, -2), tokens)}</strong>;
+    if (part.startsWith("\x60") && part.endsWith("\x60"))
+      return (
+        <code key={index} dir="auto" className="rounded bg-secondary px-1">
+          {highlight(part.slice(1, -1), tokens)}
+        </code>
+      );
+    if (/^[a-zA-Z0-9۰-۹٠-٩]/.test(part))
+      return (
+        <bdi key={index} dir="ltr">
+          {highlight(part, tokens)}
+        </bdi>
+      );
+    return <span key={index}>{highlight(part, tokens)}</span>;
+  });
+}
+const row = (line: string) => line.startsWith("|") && line.endsWith("|");
+const cells = (line: string) =>
+  line
     .slice(1, -1)
     .split("|")
-    .map((c) => c.trim());
-
-export function Markdown({ content }: { content: string }) {
-  const lines = content.split("\n");
+    .map((cell) => cell.trim());
+export function Markdown({
+  content,
+  sectionId,
+  query = "",
+}: {
+  content: string;
+  sectionId?: string;
+  query?: string;
+}) {
+  const lines = markdownLines(content);
+  const tokens = new Set(queryTokens(query));
+  const inline = (value: string) => renderInline(value, tokens);
   const blocks: ReactNode[] = [];
-  let list: string[] = [];
-  let key = 0;
-
-  const flushList = () => {
-    if (list.length) {
-      blocks.push(
-        <ul key={key++} className="space-y-2 pr-1">
-          {list.map((item, i) => (
-            <li key={i} className="flex items-start gap-2.5 leading-relaxed">
-              <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-              <span className="text-muted-foreground">{renderInline(item)}</span>
-            </li>
-          ))}
-        </ul>,
-      );
-      list = [];
-    }
+  let list: { text: string; number: number | null }[] = [];
+  let ordered = false;
+  const flush = () => {
+    if (!list.length) return;
+    const items = list.map((item, i) => (
+      <li key={i} value={item.number ?? undefined} className="py-1 ps-1">
+        {inline(item.text)}
+      </li>
+    ));
+    blocks.push(
+      ordered ? (
+        <ol key={blocks.length} start={list[0]!.number!} className="list-decimal space-y-1 ps-6">
+          {items}
+        </ol>
+      ) : (
+        <ul key={blocks.length} className="list-disc space-y-1 ps-6">
+          {items}
+        </ul>
+      ),
+    );
+    list = [];
   };
-
   for (let i = 0; i < lines.length; i++) {
-    const line = (lines[i] ?? "").trim();
-
-    // Tables
-    if (isTableRow(line) && !isDivider(line)) {
+    const line = lines[i]!.trim();
+    const fence = line.match(/^(\x60{3,}|~{3,})(.*)$/);
+    if (fence) {
+      flush();
+      const code: string[] = [];
+      while (++i < lines.length && !lines[i]!.trim().startsWith(fence[1]!)) code.push(lines[i]!);
+      if (fence[2]!.trim().toLowerCase() !== "dataview")
+        blocks.push(
+          <pre
+            key={blocks.length}
+            dir="auto"
+            className="max-w-full overflow-x-auto rounded-xl bg-secondary p-3 text-sm"
+          >
+            <code>{code.join("\n")}</code>
+          </pre>,
+        );
+      continue;
+    }
+    const numbered = line.match(/^(\d+)[.)]\s+(.+)/);
+    const bullet = line.match(/^[-*]\s+(.+)/);
+    if (numbered || bullet) {
+      if (list.length && ordered !== Boolean(numbered)) flush();
+      ordered = Boolean(numbered);
+      list.push({
+        text: numbered?.[2] ?? bullet![1]!,
+        number: numbered ? Number(numbered[1]) : null,
+      });
+      continue;
+    }
+    flush();
+    if (!line || /^[-_*]{3,}$/.test(line) || line === "-") continue;
+    if (row(line)) {
       const rows: string[][] = [];
-      let hasHeader = false;
-      let j = i;
-      while (j < lines.length && isTableRow((lines[j] ?? "").trim())) {
-        const l = (lines[j] ?? "").trim();
-        if (isDivider(l)) {
-          hasHeader = rows.length === 1;
-        } else {
-          rows.push(cells(l));
-        }
-        j++;
+      let header = false;
+      while (i < lines.length && row(lines[i]!.trim())) {
+        const current = lines[i]!.trim();
+        if (/^\|[\s:|-]+\|$/.test(current)) header = rows.length === 1;
+        else rows.push(cells(current));
+        i++;
       }
-      flushList();
-      const head = hasHeader ? (rows[0] ?? null) : null;
-      const bodyRows = hasHeader ? rows.slice(1) : rows;
+      i--;
       blocks.push(
-        <div key={key++} className="-mx-1 overflow-x-auto">
-          <table className="w-full min-w-full border-collapse text-[13px]">
-            {head && (
+        <div
+          key={blocks.length}
+          role="region"
+          aria-label="جدول قابل پیمایش"
+          tabIndex={0}
+          className="max-w-full overflow-x-auto rounded-lg border border-border"
+        >
+          <table className="w-full border-collapse text-sm">
+            {header && (
               <thead>
                 <tr>
-                  {head.map((c, ci) => (
+                  {rows[0]!.map((cell, ci) => (
                     <th
                       key={ci}
-                      className="border border-border bg-secondary px-2.5 py-2 text-right font-bold text-foreground"
+                      scope="col"
+                      className="border border-border bg-secondary px-3 py-2 text-start"
                     >
-                      {renderInline(c)}
+                      {inline(cell)}
                     </th>
                   ))}
                 </tr>
               </thead>
             )}
             <tbody>
-              {bodyRows.map((r, ri) => (
+              {rows.slice(header ? 1 : 0).map((r, ri) => (
                 <tr key={ri}>
-                  {r.map((c, ci) => (
-                    <td
-                      key={ci}
-                      className="border border-border px-2.5 py-2 align-top leading-relaxed text-muted-foreground"
-                    >
-                      {renderInline(c)}
+                  {r.map((cell, ci) => (
+                    <td key={ci} className="min-w-24 border border-border px-3 py-2 align-top">
+                      {inline(cell)}
                     </td>
                   ))}
                 </tr>
@@ -99,56 +189,39 @@ export function Markdown({ content }: { content: string }) {
           </table>
         </div>,
       );
-      i = j - 1;
       continue;
     }
-
-    if (/^[-*]\s+/.test(line)) {
-      list.push(line.replace(/^[-*]\s+/, ""));
-      continue;
-    }
-    if (/^\d+[.)]\s+/.test(line)) {
-      list.push(line.replace(/^\d+[.)]\s+/, ""));
-      continue;
-    }
-    flushList();
-    if (!line || line === "-" || /^-{3,}$/.test(line)) continue;
-    if (line.startsWith("#### ")) {
+    const heading = line.match(/^(#{1,6})\s+(.+)/);
+    if (heading) {
+      const Tag = ("h" + Math.min(heading[1]!.length + 1, 6)) as "h2" | "h3" | "h4" | "h5" | "h6";
       blocks.push(
-        <h4 key={key++} className="pt-1 text-sm font-bold text-foreground">
-          {renderInline(line.slice(5))}
-        </h4>,
-      );
-    } else if (line.startsWith("### ")) {
-      blocks.push(
-        <h3 key={key++} className="pt-2 text-base font-bold text-foreground">
-          {renderInline(line.slice(4))}
-        </h3>,
-      );
-    } else if (line.startsWith("## ")) {
-      blocks.push(
-        <h2
-          key={key++}
-          className="border-r-4 border-primary pr-3 pt-4 text-lg font-bold text-foreground first:pt-0"
+        <Tag
+          key={blocks.length}
+          id={sectionId && heading[1]!.length >= 3 ? headingAnchor(sectionId, i) : undefined}
+          className="scroll-mt-24 pt-3 text-lg font-bold"
         >
-          {renderInline(line.slice(3))}
-        </h2>,
+          {inline(heading[2]!)}
+        </Tag>,
       );
-    } else if (line.startsWith("# ")) {
+    } else if (line.startsWith(">")) {
       blocks.push(
-        <h1 key={key++} className="text-xl font-bold text-foreground">
-          {renderInline(line.slice(2))}
-        </h1>,
+        <blockquote
+          key={blocks.length}
+          className="border-s-4 border-primary ps-3 text-muted-foreground"
+        >
+          {inline(line.replace(/^>\s?/, ""))}
+        </blockquote>,
       );
     } else {
       blocks.push(
-        <p key={key++} className="leading-relaxed text-muted-foreground">
-          {renderInline(line)}
+        <p key={blocks.length} className="text-muted-foreground">
+          {inline(line)}
         </p>,
       );
     }
   }
-  flushList();
-
-  return <div className="space-y-3">{blocks}</div>;
+  flush();
+  return (
+    <div className="min-w-0 space-y-4 text-[15px] leading-8 [overflow-wrap:anywhere]">{blocks}</div>
+  );
 }

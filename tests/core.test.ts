@@ -51,6 +51,21 @@ describe("search", () => {
     expect(searchNotes("تستذخیره", [])).toEqual([]);
     expect(highlightParts("Error E01", "e01").some((p) => p.hit && p.text === "E01")).toBe(true);
   });
+  test("local edits replace original search results and offline passages", () => {
+    const original = searchNotes("E01")[0]!;
+    const edited = {
+      ...original,
+      title: "آموزشاختصاصی",
+      body: "متن جدید اختصاصی",
+      tags: [],
+      category: "آموزش",
+    };
+    expect(searchNotes("E01", [edited]).some((n) => n.id === original.id)).toBe(false);
+    expect(searchNotes("آموزشاختصاصی", [edited]).map((note) => note.id)).toEqual([edited.id]);
+    expect(searchNotes("آموزشاختصاصی", [edited])[0]?.content).toBeUndefined();
+    expect(offlineAnswer("آموزشاختصاصی", [edited]).text).toContain(edited.body);
+    expect(searchNotes("E01").some((n) => n.id === original.id)).toBe(true);
+  });
   test("long queries on the real catalogue stay bounded", () => {
     const query = "علت روشن نشدن پکیج و کاهش فشار آب گرم چیست";
     const start = performance.now();
@@ -96,18 +111,18 @@ describe("streaming", () => {
 
 describe("API boundaries", () => {
   test("uses trusted context and preserves completion and upstream failures", async () => {
-    const key = process.env["OPENAI_API_KEY"];
-    const model = process.env["OPENAI_MODEL"];
-    process.env["OPENAI_API_KEY"] = "test-only";
-    delete process.env["OPENAI_MODEL"];
+    const key = process.env["OPENROUTER_API_KEY"];
+    const model = process.env["OPENROUTER_MODEL"];
+    process.env["OPENROUTER_API_KEY"] = "test-only";
+    delete process.env["OPENROUTER_MODEL"];
     let input = "";
     const fetchMock = spyOn(globalThis, "fetch").mockImplementation(async (url, init) => {
-      expect(url).toBe("https://api.openai.com/v1/responses");
+      expect(url).toBe("https://openrouter.ai/api/v1/responses");
       const headers = new Headers(init?.headers);
       expect(headers.get("authorization")).toBe("Bearer test-only");
       expect(headers.has("Lovable-API-Key")).toBe(false);
       const payload = JSON.parse(String(init?.body));
-      expect(payload.model).toBe(process.env["OPENAI_MODEL"] || "chat-latest");
+      expect(payload.model).toBe(process.env["OPENROUTER_MODEL"] || "openrouter/free");
       expect(payload.store).toBe(false);
       expect(payload).not.toHaveProperty("reasoning");
       input = payload.input;
@@ -130,7 +145,7 @@ describe("API boundaries", () => {
       expect(await response.text()).toContain('"done":true');
       expect(input).toContain("[1]");
       expect(input).not.toContain("UNTRUSTED_INJECTED_CONTEXT");
-      process.env["OPENAI_MODEL"] = "test-model-override";
+      process.env["OPENROUTER_MODEL"] = "test-model-override";
       expect(await (await handleAiRequest(request())).text()).toContain('"done":true');
       fetchMock.mockImplementation(
         async () => new Response("secret provider detail", { status: 500 }),
@@ -138,20 +153,20 @@ describe("API boundaries", () => {
       const failed = await handleAiRequest(request());
       expect(failed.status).toBe(502);
       expect(await failed.text()).not.toContain("secret provider detail");
-      process.env["OPENAI_API_KEY"] = "کلید_API_شما";
+      process.env["OPENROUTER_API_KEY"] = "کلید_API_شما";
       fetchMock.mockClear();
       const invalidKey = await handleAiRequest(request());
       expect(invalidKey.status).toBe(503);
-      expect(await invalidKey.text()).toContain("کلید OpenAI نامعتبر است");
+      expect(await invalidKey.text()).toContain("کلید OpenRouter نامعتبر است");
       expect(fetchMock).not.toHaveBeenCalled();
-      delete process.env["OPENAI_API_KEY"];
+      delete process.env["OPENROUTER_API_KEY"];
       expect((await handleAiRequest(request())).status).toBe(503);
     } finally {
       fetchMock.mockRestore();
-      if (key === undefined) delete process.env["OPENAI_API_KEY"];
-      else process.env["OPENAI_API_KEY"] = key;
-      if (model === undefined) delete process.env["OPENAI_MODEL"];
-      else process.env["OPENAI_MODEL"] = model;
+      if (key === undefined) delete process.env["OPENROUTER_API_KEY"];
+      else process.env["OPENROUTER_API_KEY"] = key;
+      if (model === undefined) delete process.env["OPENROUTER_MODEL"];
+      else process.env["OPENROUTER_MODEL"] = model;
     }
   });
   test("rejects malformed, oversized and cross-origin requests before calling AI", async () => {

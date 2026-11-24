@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { verifyOfflineAssets } from "@/lib/offline-readiness";
 
 type InstallPrompt = Event & {
   prompt: () => Promise<void>;
@@ -15,7 +16,15 @@ export function PwaStatus() {
   const [reloading, setReloading] = useState(false);
   useEffect(() => {
     let alive = true;
-    const sync = () => setOnline(navigator.onLine);
+    const check = () => {
+      void verifyOfflineAssets().then((value) => {
+        if (alive) setReady(value);
+      });
+    };
+    const sync = () => {
+      setOnline(navigator.onLine);
+      check();
+    };
     const prompt = (event: Event) => {
       event.preventDefault();
       setInstall(event as InstallPrompt);
@@ -38,8 +47,9 @@ export function PwaStatus() {
     window.addEventListener("pwa-error", error);
     window.addEventListener("pwa-update", available);
     if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.addEventListener("controllerchange", check);
       void navigator.serviceWorker.ready.then(() => {
-        if (alive) setReady(true);
+        check();
       });
       void navigator.serviceWorker
         .getRegistration()
@@ -62,6 +72,7 @@ export function PwaStatus() {
       window.removeEventListener("appinstalled", installed);
       window.removeEventListener("pwa-error", error);
       window.removeEventListener("pwa-update", available);
+      navigator.serviceWorker?.removeEventListener("controllerchange", check);
     };
   }, []);
   useEffect(() => {
@@ -69,7 +80,14 @@ export function PwaStatus() {
     const reload = () => window.location.reload();
     navigator.serviceWorker.addEventListener("controllerchange", reload);
     update?.postMessage({ type: "SKIP_WAITING" });
-    return () => navigator.serviceWorker.removeEventListener("controllerchange", reload);
+    const timeout = setTimeout(() => {
+      setReloading(false);
+      setFailed(true);
+    }, 15000);
+    return () => {
+      clearTimeout(timeout);
+      navigator.serviceWorker.removeEventListener("controllerchange", reload);
+    };
   }, [reloading, update]);
 
   return (
@@ -79,13 +97,15 @@ export function PwaStatus() {
     >
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-card p-3">
         <p role="status">
-          {!online
-            ? "آفلاین · هوش مصنوعی آنلاین در دسترس نیست"
-            : failed
-              ? "آماده‌سازی آفلاین انجام نشد؛ صفحه را دوباره باز کنید"
-              : ready
-                ? "آمادهٔ استفادهٔ آفلاین"
-                : "راهنمای جیبی پکیج"}
+          {failed
+            ? "آماده‌سازی آفلاین انجام نشد؛ صفحه را دوباره باز کنید"
+            : ready
+              ? online
+                ? "متن راهنما برای استفاده آفلاین آماده است"
+                : "آفلاین · متن راهنما آماده است"
+              : online
+                ? "آمادگی آفلاین هنوز تأیید نشده است"
+                : "آفلاین · بسته کامل راهنما تأیید نشده است"}
         </p>
         {install && (
           <button
@@ -108,7 +128,13 @@ export function PwaStatus() {
           <button
             disabled={reloading}
             className="rounded-lg border border-primary px-3 py-2 text-primary"
-            onClick={() => setReloading(true)}
+            onClick={() => {
+              if (document.querySelector("form[data-note-editor]")) {
+                window.alert("پیش از بازخوانی، یادداشت در حال ویرایش را ذخیره یا فرم را ببندید.");
+                return;
+              }
+              setReloading(true);
+            }}
           >
             نصب نسخهٔ جدید و بازخوانی صفحه
           </button>

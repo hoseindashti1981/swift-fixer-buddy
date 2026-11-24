@@ -1,4 +1,7 @@
-import data from "./notes.json";
+import data from "./catalogue.generated.json";
+import migration from "./legacy-map.generated.json";
+import type { NoteProvenance } from "./content-policy";
+import type { ContentMetadata } from "./content-schema";
 
 export interface Note {
   id: string;
@@ -6,15 +9,13 @@ export interface Note {
   category: string;
   tags: string[];
   body: string;
+  provenance?: NoteProvenance;
+  content?: ContentMetadata;
 }
 
-// نوت‌های واقعی کاربر که از Obsidian تبدیل شده‌اند (src/data/notes.json)
-export const notes: Note[] = data.map((note) => ({
-  ...note,
-  title: /[\p{L}\p{N}]/u.test(note.title)
-    ? note.title
-    : note.body.match(/^#\s+(.+)$/m)?.[1]?.trim() ||
-      note.id.replace(/^\d+-/, "").replace(/-/g, " "),
-}));
+// Generated and validated before production builds; the source archive stays out of the app.
+export const legacyNoteIds = new Set(migration.map((entry) => entry.legacyId));
+export const notes: Note[] = data.articles as Note[];
+export const catalogueNoteIds = new Set([...legacyNoteIds, ...notes.map((note) => note.id)]);
 
 export const categories = [...new Set(notes.map((n) => n.category))];

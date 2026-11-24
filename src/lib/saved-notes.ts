@@ -1,41 +1,39 @@
 import { useEffect, useState } from "react";
-import type { Note } from "@/data/notes";
+import { catalogueNoteIds, type Note } from "@/data/notes";
+import { isNoteAvailable } from "@/data/content-policy";
+import { readLibrary, storeNote, updateLibrary, subscribeLibrary } from "./library-storage";
 
-const STORAGE_KEY = "ai-saved-notes-v1";
 export const AI_CATEGORY = "پاسخ‌های هوش مصنوعی";
 
-const listeners = new Set<() => void>();
-
 function read(): Note[] {
-  if (typeof window === "undefined") return [];
+  return readLibrary().notes as Note[];
+}
+
+export function getSavedNotes(): Note[] {
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const parsed: unknown = JSON.parse(raw);
-    return Array.isArray(parsed)
-      ? parsed.filter(
-          (n): n is Note =>
-            n &&
-            typeof n.id === "string" &&
-            typeof n.title === "string" &&
-            typeof n.body === "string" &&
-            typeof n.category === "string" &&
-            Array.isArray(n.tags) &&
-            n.tags.every((tag: unknown) => typeof tag === "string"),
-        )
-      : [];
+    return read()
+      .map(
+        ({ content: _content, ...note }) =>
+          ({
+            ...note,
+            provenance: catalogueNoteIds.has(note.id)
+              ? "local-edit"
+              : note.id.startsWith("ai-")
+                ? "ai"
+                : "personal",
+          }) as Note,
+      )
+      .filter(isNoteAvailable);
   } catch {
     return [];
   }
 }
 
-function write(next: Note[]) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  listeners.forEach((l) => l());
-}
-
-export function getSavedNotes(): Note[] {
-  return read();
+export function saveOfflineNote(note: Note): void {
+  if (!note.title.trim() || !note.body.trim() || !note.category.trim()) {
+    throw new Error("عنوان، دسته‌بندی و متن را وارد کنید.");
+  }
+  storeNote(note);
 }
 
 export function addSavedNote(input: { title: string; body: string; tags?: string[] }): Note {
@@ -46,24 +44,30 @@ export function addSavedNote(input: { title: string; body: string; tags?: string
     tags: ["هوش مصنوعی", ...(input.tags ?? [])],
     body: input.body,
   };
-  write([note, ...read()]);
+  storeNote(note);
   return note;
 }
 
 export function removeSavedNote(id: string) {
-  write(read().filter((n) => n.id !== id));
+  updateLibrary((library) => ({
+    ...library,
+    notes: library.notes.filter((note) => note.id !== id),
+    favorites: catalogueNoteIds.has(id)
+      ? library.favorites
+      : library.favorites.filter((item) => item !== id),
+  }));
 }
 
 /** Reactive access to saved notes (client-only; empty during SSR). */
 export function useSavedNotes(): Note[] {
   const [saved, setSaved] = useState<Note[]>([]);
   useEffect(() => {
-    const sync = () => setSaved(read());
+    const sync = () => setSaved(getSavedNotes());
     sync();
-    listeners.add(sync);
+    const unsubscribe = subscribeLibrary(sync);
     window.addEventListener("storage", sync);
     return () => {
-      listeners.delete(sync);
+      unsubscribe();
       window.removeEventListener("storage", sync);
     };
   }, []);
