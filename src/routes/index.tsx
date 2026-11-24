@@ -256,14 +256,23 @@ function Index() {
           })}
         </div>
       </div>
-      <Link
-        to="/diagnose"
-        search={state}
-        onClick={() => saveSearchPosition(state)}
-        className="my-3 block min-h-12 rounded-2xl border border-primary bg-primary/10 p-4 text-sm font-bold leading-7 text-primary"
-      >
-        عیب‌یابی مرحله‌ای آفلاین
-      </Link>
+      <nav aria-label="ابزارهای عیب‌یابی" className="my-3 grid grid-cols-2 gap-2">
+        <Link
+          to="/ai"
+          search={{ q: query.trim() }}
+          className="flex min-h-14 items-center justify-center rounded-2xl bg-primary px-3 py-2 text-center text-sm font-bold leading-6 text-primary-foreground"
+        >
+          دستیار هوش مصنوعی
+        </Link>
+        <Link
+          to="/diagnose"
+          search={state}
+          onClick={() => saveSearchPosition(state)}
+          className="flex min-h-14 items-center justify-center rounded-2xl border border-primary bg-primary/10 px-3 py-2 text-center text-sm font-bold leading-6 text-primary"
+        >
+          عیب‌یابی مرحله‌ای آفلاین
+        </Link>
+      </nav>
       {storageError && (
         <p role="alert" className="text-sm text-destructive">
           {storageError}
@@ -425,13 +434,6 @@ function Index() {
           افزودن یادداشت شخصی
         </button>
         {adding && <NoteEditor onClose={() => setAdding(false)} />}
-        <Link
-          to="/ai"
-          search={{ q: query.trim() }}
-          className="mt-3 block min-h-12 rounded-xl bg-secondary p-3 text-center text-sm"
-        >
-          دستیار عیب‌یابی · {saved.length.toLocaleString("fa-IR")} یادداشت ذخیره‌شده
-        </Link>
       </footer>
     </div>
   );
