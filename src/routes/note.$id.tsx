@@ -68,7 +68,7 @@ function NotePage() {
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
-      <header className="sticky top-0 z-10 -mx-4 border-b border-border bg-background/95 px-4 py-3 backdrop-blur">
+      <header className="sticky top-[env(safe-area-inset-top)] z-10 -mx-4 border-b border-border bg-background/95 px-4 py-3 backdrop-blur">
         <Link
           to="/"
           search={searchState}

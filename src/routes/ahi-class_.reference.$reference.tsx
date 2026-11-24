@@ -27,7 +27,7 @@ function ClassReferencePage() {
   const sections = coverage.filter((row) => row.file === file);
   return (
     <main className="mx-auto max-w-3xl px-4 pb-16">
-      <header className="sticky top-0 z-10 -mx-4 flex items-center justify-between gap-2 border-b border-border bg-background px-4 py-2">
+      <header className="sticky top-[env(safe-area-inset-top)] z-10 -mx-4 flex items-center justify-between gap-2 border-b border-border bg-background px-4 py-2">
         <Link
           to="/ahi-class"
           className="inline-flex min-h-11 items-center text-sm font-medium text-primary"

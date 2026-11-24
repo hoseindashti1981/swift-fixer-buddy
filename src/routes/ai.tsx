@@ -48,7 +48,7 @@ function AiFolder() {
 
   return (
     <div className="mx-auto min-h-screen max-w-xl px-4 pb-16">
-      <header className="sticky top-0 z-10 -mx-4 border-b border-border bg-background/95 px-4 py-3 backdrop-blur">
+      <header className="sticky top-[env(safe-area-inset-top)] z-10 -mx-4 border-b border-border bg-background/95 px-4 py-3 backdrop-blur">
         <Link
           to="/"
           className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground"

@@ -199,7 +199,7 @@ function Index() {
           کلاس استاد آهی
         </Link>
       </header>
-      <div className="sticky top-0 z-10 -mx-4 bg-background/95 px-4 py-3 backdrop-blur">
+      <div className="sticky top-[env(safe-area-inset-top)] z-10 -mx-4 bg-background/95 px-4 py-3 backdrop-blur">
         <label className="sr-only" htmlFor="library-search">
           جستجو در راهنمای پکیج
         </label>
